@@ -2,7 +2,7 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.4.
 
-### 🚀 Qu'est-ce que le Lazy Loading ?
+### Qu'est-ce que le Lazy Loading ?
 
 Le **Lazy Loading** (chargement paresseux) est une technique d'optimisation qui consiste à charger les modules/composants uniquement quand l'utilisateur en a besoin, plutôt que de tout charger au démarrage de l'application.
 
@@ -30,7 +30,7 @@ export const routes: Routes = [
 ];
 ```
 
-### 🔄 Qu'est-ce qu'un composant dynamique ?
+### Qu'est-ce qu'un composant dynamique ?
 
 Un **composant dynamique** est un composant qui n'est pas déclaré dans le template HTML, mais créé programmatiquement à l'exécution (runtime). Cela permet de :
 
@@ -99,3 +99,5 @@ addTask(task): void {
   this.notificationService.success('Tâche ajoutée !');
 }
 ```
+
+D'autres markdown sont disponibles en parcourant l'arborescence du projet ! 

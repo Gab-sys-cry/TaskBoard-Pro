@@ -53,7 +53,7 @@ export const HOME_ROUTES: Routes = [
 ```
 ---
 
-### 🔄 Observables disponibles dans TaskService
+### Observables disponibles dans TaskService
 
 ```typescript
 // Observable principal
@@ -70,7 +70,7 @@ progressPercentage$: Observable<number> // Pourcentage de progression
 
 ---
 
-### 🛠️ Méthodes du service
+### Méthodes du service
 
 | Méthode                    | Description                          |
 |----------------------------|--------------------------------------|
@@ -82,7 +82,7 @@ progressPercentage$: Observable<number> // Pourcentage de progression
 
 ---
 
-### 📱 Utilisation dans les composants
+### Utilisation dans les composants
 
 #### Dans le composant TypeScript :
 
@@ -110,7 +110,7 @@ totalTasks$ = this.taskService.totalTasks$;
 
 ---
 
-### ✨ Avantages de cette approche
+### Avantages de cette approche
 
 1. **Réactivité** : Les données se mettent à jour automatiquement dans tous les composants
 2. **Pas de memory leaks** : L'async pipe gère les unsubscriptions automatiquement
