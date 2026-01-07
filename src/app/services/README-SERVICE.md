@@ -1,7 +1,5 @@
 # 📋 TaskBoard Pro - Documentation Technique
 
-## 🚀 Ce qui a été ajouté
-
 ### 1. Service TaskService (`src/app/services/task.service.ts`)
 
 Un service Angular utilisant **RxJS** pour gérer un flux réactif de données (tâches).
@@ -53,46 +51,6 @@ export const HOME_ROUTES: Routes = [
   }
 ];
 ```
-
-#### Avantages du Lazy Loading :
-
-| Avantage | Description |
-|----------|-------------|
-| **Performance** | Les bundles sont chargés à la demande, réduisant le temps de chargement initial |
-| **Bundles séparés** | Chaque feature a son propre chunk JavaScript |
-| **Scalabilité** | Facilite l'ajout de nouvelles features sans impacter les autres |
-
----
-
-### 📂 Structure des fichiers
-
-```
-src/app/
-├── models/
-│   └── task.model.ts        # Interface Task
-├── services/
-│   └── task.service.ts      # Service RxJS
-│   └── README-SERVICE.md    # Cette documentation
-├── home/
-│   ├── home.ts              # Composant Home (landing page)
-│   ├── home.html
-│   ├── home.css
-│   └── home.routes.ts       # Routes lazy-loaded
-├── tasks/
-│   ├── tasks.ts             # Composant Tasks (gestion des tâches)
-│   ├── tasks.html
-│   ├── tasks.css
-│   └── tasks.routes.ts      # Routes lazy-loaded
-├── about/
-│   ├── about.ts             # Composant About
-│   ├── about.html
-│   ├── about.css
-│   └── about.routes.ts      # Routes lazy-loaded
-├── header/                  # Composant Header avec navigation
-├── footer/                  # Composant Footer
-└── app.routes.ts            # Routes principales avec loadChildren()
-```
-
 ---
 
 ### 🔄 Observables disponibles dans TaskService

@@ -2,8 +2,6 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.4.
 
-## Séquence 3 — Lazy Loading & Composants dynamiques
-
 ### 🚀 Qu'est-ce que le Lazy Loading ?
 
 Le **Lazy Loading** (chargement paresseux) est une technique d'optimisation qui consiste à charger les modules/composants uniquement quand l'utilisateur en a besoin, plutôt que de tout charger au démarrage de l'application.
@@ -30,32 +28,6 @@ export const routes: Routes = [
     loadChildren: () => import('./about/about.routes').then(m => m.ABOUT_ROUTES)
   }
 ];
-```
-
-### 📁 Comment structurer une app avec features/
-
-```
-src/app/
-├── core/                    # Services globaux (singleton)
-│   └── services/
-│       └── notification.service.ts
-├── shared/                  # Composants réutilisables
-│   └── notifications/
-├── home/                    # Feature Home
-│   ├── home.ts
-│   ├── home.html
-│   ├── home.css
-│   └── home.routes.ts       # Routes de la feature
-├── tasks/                   # Feature Tasks
-│   ├── tasks.ts
-│   ├── tasks.html
-│   ├── tasks.css
-│   ├── tasks.routes.ts
-│   ├── task-highlight/      # Composant dynamique
-│   └── task-edit/           # Composant dynamique
-├── about/                   # Feature About
-│   └── ...
-└── app.routes.ts            # Routes principales
 ```
 
 ### 🔄 Qu'est-ce qu'un composant dynamique ?
@@ -127,67 +99,3 @@ addTask(task): void {
   this.notificationService.success('Tâche ajoutée !');
 }
 ```
-
----
-
-## Development server
-
-To start a local development server, run:
-
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-## Routing
-
-This project includes a basic routing setup. You can define routes in the `app-routing.module.ts` file located in the `src/app/` directory.
-
-``
-export const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'about', component: AboutComponent},
-  {path: '**', redirectTo: ''}
-];
-``
