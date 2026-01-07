@@ -1,13 +1,14 @@
-import {Component, inject} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {TaskService} from '../services/task.service';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { TaskService } from '../services/task.service';
 
 @Component({
   selector: 'app-about',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './about.html',
-  styleUrl: './about.css'
+  styleUrl: './about.css',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AboutComponent {
   title = 'À propos de TaskBoard Pro';

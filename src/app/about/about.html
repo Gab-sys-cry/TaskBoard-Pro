@@ -5,9 +5,9 @@
   </div>
 
   <div class="about-grid">
-    <!-- Stats Card -->
+    <!-- Stats -->
     <div class="glass-card stats-card">
-      <h2>📊 Vos stats</h2>
+      <h2><i class="bi bi-bar-chart-line"></i> Vos stats</h2>
       <div class="stats-grid">
         <div class="stat-item">
           <span class="stat-value">{{ totalTasks$ | async }}</span>
@@ -28,34 +28,34 @@
       </div>
     </div>
 
-    <!-- Features Card -->
+    <!-- Features -->
     <div class="glass-card features-card">
-      <h2>✨ Fonctionnalités</h2>
+      <h2><i class="bi bi-stars"></i> Fonctionnalités</h2>
       <ul class="feature-list">
-        <li>Ajouter, modifier, supprimer des tâches</li>
-        <li>Marquer comme terminé</li>
-        <li>3 niveaux de priorité</li>
-        <li>Stats en temps réel</li>
-        <li>Interface responsive</li>
+        <li><i class="bi bi-plus-circle"></i> Ajouter, modifier, supprimer des tâches</li>
+        <li><i class="bi bi-check2-circle"></i> Marquer comme terminé</li>
+        <li><i class="bi bi-flag"></i> 3 niveaux de priorité</li>
+        <li><i class="bi bi-speedometer2"></i> Stats en temps réel</li>
+        <li><i class="bi bi-phone"></i> Interface responsive</li>
       </ul>
     </div>
 
     <!-- Tech Card -->
     <div class="glass-card tech-card">
-      <h2>🛠️ Stack technique</h2>
+      <h2><i class="bi bi-code-slash"></i> Stack technique</h2>
       <div class="tech-tags">
-        <span class="tech-tag">Angular 20</span>
-        <span class="tech-tag">TypeScript</span>
-        <span class="tech-tag">RxJS</span>
-        <span class="tech-tag">Standalone Components</span>
-        <span class="tech-tag">Lazy Loading</span>
-        <span class="tech-tag">Signals</span>
+        <span class="tech-tag"><i class="bi bi-hexagon"></i> Angular 20</span>
+        <span class="tech-tag"><i class="bi bi-filetype-tsx"></i> TypeScript</span>
+        <span class="tech-tag"><i class="bi bi-arrow-repeat"></i> RxJS</span>
+        <span class="tech-tag"><i class="bi bi-box"></i> Standalone</span>
+        <span class="tech-tag"><i class="bi bi-lightning"></i> Lazy Loading</span>
+        <span class="tech-tag"><i class="bi bi-broadcast"></i> Signals</span>
       </div>
     </div>
 
-    <!-- Info Card -->
+    <!-- Info -->
     <div class="glass-card info-card">
-      <h2>💡 Comment ça marche</h2>
+      <h2><i class="bi bi-lightbulb"></i> Comment ça marche</h2>
       <p>Les données sont gérées avec <strong>RxJS</strong> et partagées entre les pages via un service.</p>
       <p>Chaque modification met à jour automatiquement toutes les vues grâce aux <strong>Observables</strong>.</p>
     </div>

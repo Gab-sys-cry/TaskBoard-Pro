@@ -8,21 +8,24 @@ import { Task } from '../../models/task.model';
   template: `
     <div class="highlight-overlay" (click)="close.emit()">
       <div class="highlight-card" (click)="$event.stopPropagation()">
-        <button class="close-btn" (click)="close.emit()">✕</button>
+        <button class="close-btn" (click)="close.emit()"><i class="bi bi-x-lg"></i></button>
         <div class="highlight-header">
-          <span class="highlight-icon">⭐</span>
+          <span class="highlight-icon"><i class="bi bi-star-fill"></i></span>
           <h2>Tâche mise en avant</h2>
         </div>
         <div class="highlight-content">
           <h3>{{ task?.title }}</h3>
           <p>{{ task?.description || 'Aucune description' }}</p>
           <div class="task-meta">
-            <span class="priority-badge" [class]="task?.priority">{{ task?.priority }}</span>
+            <span class="priority-badge" [class]="task?.priority">
+              <i class="bi bi-flag-fill"></i> {{ task?.priority }}
+            </span>
             <span class="status-badge" [class.completed]="task?.completed">
+              <i class="bi" [class.bi-check-circle-fill]="task?.completed" [class.bi-clock]="!task?.completed"></i>
               {{ task?.completed ? 'Terminée' : 'En cours' }}
             </span>
           </div>
-          <p class="task-date">Créée le {{ task?.createdAt | date:'dd/MM/yyyy' }}</p>
+          <p class="task-date"><i class="bi bi-calendar3"></i> Créée le {{ task?.createdAt | date:'dd/MM/yyyy' }}</p>
         </div>
       </div>
     </div>

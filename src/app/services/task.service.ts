@@ -2,12 +2,14 @@ import { Injectable, inject } from '@angular/core';
 import { BehaviorSubject, map, Observable, tap } from 'rxjs';
 import { Task } from '../models/task.model';
 import { NotificationService } from '../core/services/notification.service';
+import { SecurityService } from '../core/services/security.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TaskService {
   private notificationService = inject(NotificationService);
+  private securityService = inject(SecurityService);
 
   // BehaviorSubject pour maintenir l'état des taches
   private tasksSubject = new BehaviorSubject<Task[]>([
@@ -90,9 +92,27 @@ export class TaskService {
 
   // Ajouter une nouvelle tache
   addTask(task: Omit<Task, 'id' | 'createdAt'>): void {
+    // Validation de sécurité - Protection XSS
+    const sanitizedTitle = this.securityService.validateTaskTitle(task.title);
+    if (!sanitizedTitle) {
+      this.notificationService.error('Titre de tâche invalide');
+      return;
+    }
+
+    // Vérifier les tentatives d'injection
+    if (this.securityService.containsMaliciousHtml(task.title) ||
+        this.securityService.containsMaliciousHtml(task.description)) {
+      this.securityService.logSecurityWarning(task.title, 'task title/description');
+      this.notificationService.warning('Contenu potentiellement dangereux détecté et nettoyé');
+    }
+
+    const sanitizedDescription = this.securityService.validateTaskDescription(task.description);
+
     const currentTasks = this.tasksSubject.getValue();
     const newTask: Task = {
       ...task,
+      title: sanitizedTitle,
+      description: sanitizedDescription,
       id: this.generateId(),
       createdAt: new Date()
     };
@@ -145,9 +165,32 @@ export class TaskService {
 
   // Mettre à jour une tache
   updateTask(id: number, updates: Partial<Task>): void {
+    // Validation de sécurité pour les mises à jour
+    const sanitizedUpdates: Partial<Task> = { ...updates };
+
+    if (updates.title !== undefined) {
+      const sanitizedTitle = this.securityService.validateTaskTitle(updates.title);
+      if (!sanitizedTitle) {
+        this.notificationService.error('Titre de tâche invalide');
+        return;
+      }
+      if (this.securityService.containsMaliciousHtml(updates.title)) {
+        this.securityService.logSecurityWarning(updates.title, 'task update title');
+        this.notificationService.warning('Contenu dangereux détecté et nettoyé');
+      }
+      sanitizedUpdates.title = sanitizedTitle;
+    }
+
+    if (updates.description !== undefined) {
+      if (this.securityService.containsMaliciousHtml(updates.description)) {
+        this.securityService.logSecurityWarning(updates.description, 'task update description');
+      }
+      sanitizedUpdates.description = this.securityService.validateTaskDescription(updates.description);
+    }
+
     const currentTasks = this.tasksSubject.getValue();
     const updatedTasks = currentTasks.map(task =>
-      task.id === id ? {...task, ...updates} : task
+      task.id === id ? {...task, ...sanitizedUpdates} : task
     );
     this.tasksSubject.next(updatedTasks);
 

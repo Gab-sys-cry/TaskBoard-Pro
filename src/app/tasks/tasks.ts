@@ -1,4 +1,4 @@
-import { Component, inject, ViewContainerRef, ViewChild, ComponentRef } from '@angular/core';
+import { Component, inject, ViewContainerRef, ViewChild, ComponentRef, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TaskService } from '../services/task.service';
 import { Task } from '../models/task.model';
@@ -10,7 +10,8 @@ import { TaskEditComponent } from './task-edit/task-edit.component';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './tasks.html',
-  styleUrl: './tasks.css'
+  styleUrl: './tasks.css',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TasksComponent {
   title = 'Gestion des Tâches';

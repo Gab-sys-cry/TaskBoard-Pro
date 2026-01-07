@@ -10,28 +10,28 @@
   <!-- Statistiques -->
   <div class="stats-bar">
     <div class="stat-card total">
-      <span class="stat-icon">📋</span>
+      <span class="stat-icon"><i class="bi bi-collection"></i></span>
       <div class="stat-info">
         <span class="stat-value">{{ totalTasks$ | async }}</span>
         <span class="stat-label">Total</span>
       </div>
     </div>
     <div class="stat-card completed">
-      <span class="stat-icon">✅</span>
+      <span class="stat-icon"><i class="bi bi-check-circle"></i></span>
       <div class="stat-info">
         <span class="stat-value">{{ completedCount$ | async }}</span>
         <span class="stat-label">Terminées</span>
       </div>
     </div>
     <div class="stat-card pending">
-      <span class="stat-icon">⏳</span>
+      <span class="stat-icon"><i class="bi bi-hourglass-split"></i></span>
       <div class="stat-info">
         <span class="stat-value">{{ pendingCount$ | async }}</span>
         <span class="stat-label">En cours</span>
       </div>
     </div>
     <div class="stat-card progress">
-      <span class="stat-icon">📊</span>
+      <span class="stat-icon"><i class="bi bi-graph-up"></i></span>
       <div class="stat-info">
         <span class="stat-value">{{ progressPercentage$ | async }}%</span>
         <span class="stat-label">Progression</span>
@@ -46,19 +46,19 @@
 
   <!-- Formulaire d'ajout -->
   <section class="add-task-section">
-    <h2>➕ Nouvelle tâche</h2>
+    <h2><i class="bi bi-plus-circle"></i> Nouvelle tâche</h2>
     <form class="add-task-form" (submit)="$event.preventDefault(); addTask(taskTitle.value, taskDesc.value, taskPriority.value); taskTitle.value=''; taskDesc.value=''">
       <div class="form-row">
         <input #taskTitle type="text" placeholder="Titre de la tâche *" class="form-input" required>
         <select #taskPriority class="form-select">
-          <option value="low">🟢 Priorité basse</option>
-          <option value="medium" selected>🟡 Priorité moyenne</option>
-          <option value="high">🔴 Priorité haute</option>
+          <option value="low">Priorité basse</option>
+          <option value="medium" selected>Priorité moyenne</option>
+          <option value="high">Priorité haute</option>
         </select>
       </div>
       <div class="form-row">
         <input #taskDesc type="text" placeholder="Description (optionnel)" class="form-input full-width">
-        <button type="submit" class="btn-add">Ajouter</button>
+        <button type="submit" class="btn-add"><i class="bi bi-plus-lg"></i> Ajouter</button>
       </div>
     </form>
   </section>
@@ -67,7 +67,7 @@
   <div class="tasks-container">
     <!-- Tâches en cours -->
     <section class="tasks-column pending-column">
-      <h2>⏳ En cours ({{ pendingCount$ | async }})</h2>
+      <h2><i class="bi bi-hourglass-split"></i> En cours ({{ pendingCount$ | async }})</h2>
       <div class="tasks-list">
         @for (task of pendingTasks$ | async; track task.id) {
           <div class="task-card" [class.priority-high]="task.priority === 'high'" [class.priority-medium]="task.priority === 'medium'" [class.priority-low]="task.priority === 'low'">
@@ -80,17 +80,17 @@
               <span class="priority-badge" [class]="task.priority">{{ task.priority }}</span>
             </div>
             <div class="task-actions">
-              <span class="task-date">{{ task.createdAt | date:'dd/MM/yyyy HH:mm' }}</span>
+              <span class="task-date"><i class="bi bi-calendar3"></i> {{ task.createdAt | date:'dd/MM/yyyy HH:mm' }}</span>
               <div class="action-buttons">
-                <button class="btn-highlight" (click)="highlightTask(task)" title="Mettre en avant">⭐</button>
-                <button class="btn-edit" (click)="editTask(task)" title="Éditer">✏️</button>
-                <button class="btn-delete" (click)="deleteTask(task.id)" title="Supprimer">🗑️</button>
+                <button class="btn-highlight" (click)="highlightTask(task)" title="Mettre en avant"><i class="bi bi-star"></i></button>
+                <button class="btn-edit" (click)="editTask(task)" title="Éditer"><i class="bi bi-pencil"></i></button>
+                <button class="btn-delete" (click)="deleteTask(task.id)" title="Supprimer"><i class="bi bi-trash"></i></button>
               </div>
             </div>
           </div>
         } @empty {
           <div class="empty-state">
-            <span class="empty-icon">🎉</span>
+            <span class="empty-icon"><i class="bi bi-emoji-smile"></i></span>
             <p>Aucune tâche en cours !</p>
           </div>
         }
@@ -99,7 +99,7 @@
 
     <!-- Tâches terminées -->
     <section class="tasks-column completed-column">
-      <h2>✅ Terminées ({{ completedCount$ | async }})</h2>
+      <h2><i class="bi bi-check-circle"></i> Terminées ({{ completedCount$ | async }})</h2>
       <div class="tasks-list">
         @for (task of completedTasks$ | async; track task.id) {
           <div class="task-card completed">
@@ -111,17 +111,17 @@
               </div>
             </div>
             <div class="task-actions">
-              <span class="task-date">{{ task.createdAt | date:'dd/MM/yyyy HH:mm' }}</span>
+              <span class="task-date"><i class="bi bi-calendar3"></i> {{ task.createdAt | date:'dd/MM/yyyy HH:mm' }}</span>
               <div class="action-buttons">
-                <button class="btn-highlight" (click)="highlightTask(task)" title="Mettre en avant">⭐</button>
-                <button class="btn-edit" (click)="editTask(task)" title="Éditer">✏️</button>
-                <button class="btn-delete" (click)="deleteTask(task.id)" title="Supprimer">🗑️</button>
+                <button class="btn-highlight" (click)="highlightTask(task)" title="Mettre en avant"><i class="bi bi-star"></i></button>
+                <button class="btn-edit" (click)="editTask(task)" title="Éditer"><i class="bi bi-pencil"></i></button>
+                <button class="btn-delete" (click)="deleteTask(task.id)" title="Supprimer"><i class="bi bi-trash"></i></button>
               </div>
             </div>
           </div>
         } @empty {
           <div class="empty-state">
-            <span class="empty-icon">📝</span>
+            <span class="empty-icon"><i class="bi bi-clipboard-check"></i></span>
             <p>Aucune tâche terminée</p>
           </div>
         }

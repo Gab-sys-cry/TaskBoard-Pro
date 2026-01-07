@@ -1,23 +1,24 @@
 <header class="header">
   <div class="header-container">
     <div class="logo">
+      <i class="bi bi-kanban"></i>
       <h1>{{ title }}</h1>
     </div>
     <nav class="nav">
       <ul class="nav-list">
         <li>
           <a [routerLinkActiveOptions]="{exact: true}" routerLink="/" routerLinkActive="active">
-            🏠 Home
+            <i class="bi bi-house"></i> Home
           </a>
         </li>
         <li>
           <a routerLink="/tasks" routerLinkActive="active">
-            📋 Tasks
+            <i class="bi bi-list-task"></i> Tasks
           </a>
         </li>
         <li>
           <a routerLink="/about" routerLinkActive="active">
-            ℹ️ About
+            <i class="bi bi-info-circle"></i> About
           </a>
         </li>
       </ul>

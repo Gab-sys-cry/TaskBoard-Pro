@@ -58,6 +58,16 @@
 .stat-box.warning { border-color: var(--warning); }
 .stat-box.info { border-color: var(--info); }
 
+.stat-icon {
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.stat-box.success .stat-icon { color: var(--success); }
+.stat-box.warning .stat-icon { color: var(--warning); }
+.stat-box.info .stat-icon { color: var(--info); }
+
 .stat-num {
   display: block;
   font-size: 2.2rem;
@@ -74,7 +84,9 @@
 
 /* CTA Button */
 .cta-btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   padding: 1rem 2.5rem;
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
   color: white;
@@ -118,6 +130,14 @@
 .feature-icon {
   font-size: 3rem;
   margin-bottom: 1rem;
+  color: var(--primary-light);
+}
+
+.feature-icon i {
+  background: linear-gradient(135deg, var(--primary-light) 0%, var(--secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .feature-card h3 {

@@ -7,43 +7,46 @@
       <!-- Stats -->
       <div class="stats-row">
         <div class="stat-box">
+          <i class="bi bi-collection stat-icon"></i>
           <span class="stat-num">{{ totalTasks$ | async }}</span>
           <span class="stat-txt">Total</span>
         </div>
         <div class="stat-box success">
+          <i class="bi bi-check-circle stat-icon"></i>
           <span class="stat-num">{{ completedCount$ | async }}</span>
           <span class="stat-txt">Faites</span>
         </div>
         <div class="stat-box warning">
+          <i class="bi bi-hourglass-split stat-icon"></i>
           <span class="stat-num">{{ pendingCount$ | async }}</span>
           <span class="stat-txt">En cours</span>
         </div>
         <div class="stat-box info">
+          <i class="bi bi-graph-up stat-icon"></i>
           <span class="stat-num">{{ progressPercentage$ | async }}%</span>
           <span class="stat-txt">Complété</span>
         </div>
       </div>
 
-      <!-- CTA -->
       <a routerLink="/tasks" class="cta-btn">
-        Voir mes tâches →
+        <i class="bi bi-arrow-right-circle"></i> Voir mes tâches
       </a>
     </div>
   </div>
 
   <div class="features-section">
     <div class="feature-card glass-card">
-      <div class="feature-icon">📝</div>
+      <div class="feature-icon"><i class="bi bi-plus-square"></i></div>
       <h3>Créer</h3>
       <p>Ajoutez des tâches en quelques secondes</p>
     </div>
     <div class="feature-card glass-card">
-      <div class="feature-icon">✅</div>
+      <div class="feature-icon"><i class="bi bi-check2-all"></i></div>
       <h3>Suivre</h3>
       <p>Voyez votre progression en temps réel</p>
     </div>
     <div class="feature-card glass-card">
-      <div class="feature-icon">🎯</div>
+      <div class="feature-icon"><i class="bi bi-bullseye"></i></div>
       <h3>Accomplir</h3>
       <p>Terminez vos tâches efficacement</p>
     </div>

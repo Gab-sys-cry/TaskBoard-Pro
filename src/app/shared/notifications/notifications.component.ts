@@ -11,14 +11,14 @@ import { NotificationService } from '../../core/services/notification.service';
         <div class="notification" [class]="notification.type" (click)="dismiss(notification.id)">
           <span class="notification-icon">
             @switch (notification.type) {
-              @case ('success') { ✓ }
-              @case ('error') { ✕ }
-              @case ('warning') { ⚠ }
-              @default { ℹ }
+              @case ('success') { <i class="bi bi-check-circle-fill"></i> }
+              @case ('error') { <i class="bi bi-x-circle-fill"></i> }
+              @case ('warning') { <i class="bi bi-exclamation-triangle-fill"></i> }
+              @default { <i class="bi bi-info-circle-fill"></i> }
             }
           </span>
           <span class="notification-message">{{ notification.message }}</span>
-          <button class="notification-close">✕</button>
+          <button class="notification-close"><i class="bi bi-x"></i></button>
         </div>
       }
     </div>

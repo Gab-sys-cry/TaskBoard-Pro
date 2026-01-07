@@ -10,31 +10,31 @@ import { Task } from '../../models/task.model';
   template: `
     <div class="edit-overlay" (click)="cancel.emit()">
       <div class="edit-card" (click)="$event.stopPropagation()">
-        <button class="close-btn" (click)="cancel.emit()">✕</button>
+        <button class="close-btn" (click)="cancel.emit()"><i class="bi bi-x-lg"></i></button>
         <div class="edit-header">
-          <span class="edit-icon">✏️</span>
+          <span class="edit-icon"><i class="bi bi-pencil-square"></i></span>
           <h2>Modifier la tâche</h2>
         </div>
         <form class="edit-form" (ngSubmit)="onSave()">
           <div class="form-group">
-            <label for="title">Titre</label>
+            <label for="title"><i class="bi bi-type"></i> Titre</label>
             <input id="title" type="text" [(ngModel)]="editedTitle" name="title" class="form-input" required>
           </div>
           <div class="form-group">
-            <label for="description">Description</label>
+            <label for="description"><i class="bi bi-text-paragraph"></i> Description</label>
             <textarea id="description" [(ngModel)]="editedDescription" name="description" class="form-input" rows="3"></textarea>
           </div>
           <div class="form-group">
-            <label for="priority">Priorité</label>
+            <label for="priority"><i class="bi bi-flag"></i> Priorité</label>
             <select id="priority" [(ngModel)]="editedPriority" name="priority" class="form-input">
-              <option value="low">🟢 Basse</option>
-              <option value="medium">🟡 Moyenne</option>
-              <option value="high">🔴 Haute</option>
+              <option value="low">Basse</option>
+              <option value="medium">Moyenne</option>
+              <option value="high">Haute</option>
             </select>
           </div>
           <div class="form-actions">
-            <button type="button" class="btn-cancel" (click)="cancel.emit()">Annuler</button>
-            <button type="submit" class="btn-save">💾 Sauvegarder</button>
+            <button type="button" class="btn-cancel" (click)="cancel.emit()"><i class="bi bi-x-circle"></i> Annuler</button>
+            <button type="submit" class="btn-save"><i class="bi bi-check-circle"></i> Sauvegarder</button>
           </div>
         </form>
       </div>
