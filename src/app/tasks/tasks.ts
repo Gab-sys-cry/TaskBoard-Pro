@@ -1,9 +1,9 @@
-import { Component, inject, ViewContainerRef, ViewChild, ComponentRef, ChangeDetectionStrategy } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { TaskService } from '../services/task.service';
-import { Task } from '../models/task.model';
-import { TaskHighlightComponent } from './task-highlight/task-highlight.component';
-import { TaskEditComponent } from './task-edit/task-edit.component';
+import {ChangeDetectionStrategy, Component, ComponentRef, inject, ViewChild, ViewContainerRef} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {TaskService} from '../services/task.service';
+import {Task} from '../models/task.model';
+import {TaskHighlightComponent} from './task-highlight/task-highlight.component';
+import {TaskEditComponent} from './task-edit/task-edit.component';
 
 @Component({
   selector: 'app-tasks',
@@ -15,16 +15,10 @@ import { TaskEditComponent } from './task-edit/task-edit.component';
 })
 export class TasksComponent {
   title = 'Gestion des Tâches';
-
-  private taskService = inject(TaskService);
-
   // ViewContainerRef pour injecter les composants dynamiques
-  @ViewChild('dynamicComponentContainer', { read: ViewContainerRef })
+  @ViewChild('dynamicComponentContainer', {read: ViewContainerRef})
   dynamicContainer!: ViewContainerRef;
-
-  // Référence au composant dynamique actuel
-  private currentComponentRef: ComponentRef<any> | null = null;
-
+  private taskService = inject(TaskService);
   // Observables pour le template
   tasks$ = this.taskService.tasks$;
   totalTasks$ = this.taskService.totalTasks$;
@@ -33,8 +27,9 @@ export class TasksComponent {
   progressPercentage$ = this.taskService.progressPercentage$;
   completedTasks$ = this.taskService.completedTasks$;
   pendingTasks$ = this.taskService.pendingTasks$;
+  // Référence au composant dynamique actuel
+  private currentComponentRef: ComponentRef<any> | null = null;
 
-  // Méthodes
   toggleTask(id: number): void {
     this.taskService.toggleTaskCompletion(id);
   }
@@ -71,11 +66,10 @@ export class TasksComponent {
     });
   }
 
-  // Éditer une tâche
   editTask(task: Task): void {
     this.clearDynamicComponent();
 
-    // Créer le composant dynamiquement avec ViewContainerRef
+    // Créer le composant dynamiquement
     this.currentComponentRef = this.dynamicContainer.createComponent(TaskEditComponent);
 
     // Passer les données au composant

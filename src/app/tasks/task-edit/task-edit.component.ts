@@ -1,7 +1,7 @@
-﻿import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { Task } from '../../models/task.model';
+﻿import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {FormsModule} from '@angular/forms';
+import {Task} from '../../models/task.model';
 
 @Component({
   selector: 'app-task-edit',
@@ -188,6 +188,7 @@ export class TaskEditComponent implements OnInit {
   editedTitle = '';
   editedDescription = '';
   editedPriority: 'low' | 'medium' | 'high' = 'medium';
+
   ngOnInit(): void {
     if (this.task) {
       this.editedTitle = this.task.title;
@@ -195,6 +196,7 @@ export class TaskEditComponent implements OnInit {
       this.editedPriority = this.task.priority;
     }
   }
+
   onSave(): void {
     if (this.editedTitle.trim()) {
       this.save.emit({

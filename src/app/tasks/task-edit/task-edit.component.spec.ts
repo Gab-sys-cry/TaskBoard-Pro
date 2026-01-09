@@ -1,8 +1,8 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { TaskEditComponent } from './task-edit.component';
-import { Task } from '../../models/task.model';
-import { FormsModule } from '@angular/forms';
-import { vi, describe, it, expect, beforeEach } from 'vitest';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
+import {TaskEditComponent} from './task-edit.component';
+import {Task} from '../../models/task.model';
+import {FormsModule} from '@angular/forms';
+import {beforeEach, describe, expect, it, vi} from 'vitest';
 
 /**
  * Tests unitaires pour TaskEditComponent

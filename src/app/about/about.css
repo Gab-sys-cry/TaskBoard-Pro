@@ -51,7 +51,6 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Stats Card */
 .stats-card {
   grid-column: span 2;
 }
@@ -70,9 +69,17 @@
   border-left: 3px solid var(--primary);
 }
 
-.stat-item.success { border-left-color: var(--success); }
-.stat-item.warning { border-left-color: var(--warning); }
-.stat-item.info { border-left-color: var(--info); }
+.stat-item.success {
+  border-left-color: var(--success);
+}
+
+.stat-item.warning {
+  border-left-color: var(--warning);
+}
+
+.stat-item.info {
+  border-left-color: var(--info);
+}
 
 .stat-value {
   display: block;
@@ -88,7 +95,6 @@
   letter-spacing: 0.5px;
 }
 
-/* Features Card */
 .feature-list {
   list-style: none;
   padding: 0;
@@ -113,7 +119,6 @@
   font-size: 1rem;
 }
 
-/* Tech Card */
 .tech-tags {
   display: flex;
   flex-wrap: wrap;
@@ -129,7 +134,6 @@
   font-weight: 500;
 }
 
-/* Info Card */
 .info-card p {
   color: var(--text-secondary);
   margin-bottom: 0.75rem;
@@ -144,7 +148,6 @@
   color: var(--primary-light);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .stats-card {
     grid-column: span 1;

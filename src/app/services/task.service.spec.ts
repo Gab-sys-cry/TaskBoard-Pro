@@ -1,8 +1,8 @@
-import { TestBed } from '@angular/core/testing';
-import { TaskService } from './task.service';
-import { NotificationService } from '../core/services/notification.service';
-import { firstValueFrom } from 'rxjs';
-import { vi, describe, it, expect, beforeEach } from 'vitest';
+import {TestBed} from '@angular/core/testing';
+import {TaskService} from './task.service';
+import {NotificationService} from '../core/services/notification.service';
+import {firstValueFrom} from 'rxjs';
+import {beforeEach, describe, expect, it, vi} from 'vitest';
 
 /**
  * Tests unitaires pour TaskService
@@ -13,7 +13,6 @@ describe('TaskService', () => {
   let service: TaskService;
   let notificationServiceMock: any;
 
-  // Configuration avant chaque test
   beforeEach(() => {
     // Création d'un mock pour NotificationService avec Vitest
     notificationServiceMock = {
@@ -29,7 +28,7 @@ describe('TaskService', () => {
     TestBed.configureTestingModule({
       providers: [
         TaskService,
-        { provide: NotificationService, useValue: notificationServiceMock }
+        {provide: NotificationService, useValue: notificationServiceMock}
       ]
     });
 
@@ -240,7 +239,7 @@ describe('TaskService', () => {
       const taskToUpdate = tasks[0];
       const newTitle = 'Titre modifié';
 
-      service.updateTask(taskToUpdate.id, { title: newTitle });
+      service.updateTask(taskToUpdate.id, {title: newTitle});
 
       const updatedTasks = await firstValueFrom(service.tasks$);
       const updatedTask = updatedTasks.find(t => t.id === taskToUpdate.id);
@@ -270,7 +269,7 @@ describe('TaskService', () => {
       const tasks = await firstValueFrom(service.tasks$);
       const task = tasks[0];
 
-      service.updateTask(task.id, { title: 'Test' });
+      service.updateTask(task.id, {title: 'Test'});
 
       expect(notificationServiceMock.success).toHaveBeenCalled();
     });

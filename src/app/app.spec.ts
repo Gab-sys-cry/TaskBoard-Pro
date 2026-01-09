@@ -1,9 +1,9 @@
-import { TestBed } from '@angular/core/testing';
-import { App } from './app';
-import { RouterTestingModule } from '@angular/router/testing';
-import { NotificationService } from './core/services/notification.service';
-import { TaskService } from './services/task.service';
-import { BehaviorSubject } from 'rxjs';
+import {TestBed} from '@angular/core/testing';
+import {App} from './app';
+import {RouterTestingModule} from '@angular/router/testing';
+import {NotificationService} from './core/services/notification.service';
+import {TaskService} from './services/task.service';
+import {BehaviorSubject} from 'rxjs';
 
 /**
  * Tests unitaires pour le composant racine App
@@ -15,12 +15,18 @@ describe('App', () => {
   beforeEach(async () => {
     notificationServiceMock = {
       notifications$: new BehaviorSubject([]).asObservable(),
-      show: () => {},
-      dismiss: () => {},
-      success: () => {},
-      error: () => {},
-      info: () => {},
-      warning: () => {}
+      show: () => {
+      },
+      dismiss: () => {
+      },
+      success: () => {
+      },
+      error: () => {
+      },
+      info: () => {
+      },
+      warning: () => {
+      }
     };
 
     taskServiceMock = {
@@ -34,8 +40,8 @@ describe('App', () => {
     await TestBed.configureTestingModule({
       imports: [App, RouterTestingModule],
       providers: [
-        { provide: NotificationService, useValue: notificationServiceMock },
-        { provide: TaskService, useValue: taskServiceMock }
+        {provide: NotificationService, useValue: notificationServiceMock},
+        {provide: TaskService, useValue: taskServiceMock}
       ]
     }).compileComponents();
   });

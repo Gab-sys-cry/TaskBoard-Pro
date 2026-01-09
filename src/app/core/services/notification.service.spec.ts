@@ -1,7 +1,7 @@
-import { TestBed } from '@angular/core/testing';
-import { NotificationService, Notification } from './notification.service';
-import { firstValueFrom } from 'rxjs';
-import { vi, describe, it, expect, beforeEach } from 'vitest';
+import {TestBed} from '@angular/core/testing';
+import {NotificationService} from './notification.service';
+import {firstValueFrom} from 'rxjs';
+import {beforeEach, describe, expect, it, vi} from 'vitest';
 
 /**
  * Tests unitaires pour NotificationService

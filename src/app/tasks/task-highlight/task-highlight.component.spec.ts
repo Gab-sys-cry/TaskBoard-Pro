@@ -1,7 +1,7 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { TaskHighlightComponent } from './task-highlight.component';
-import { Task } from '../../models/task.model';
-import { vi, describe, it, expect, beforeEach } from 'vitest';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
+import {TaskHighlightComponent} from './task-highlight.component';
+import {Task} from '../../models/task.model';
+import {beforeEach, describe, expect, it, vi} from 'vitest';
 
 /**
  * Tests unitaires pour TaskHighlightComponent

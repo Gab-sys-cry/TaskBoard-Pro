@@ -1,8 +1,8 @@
-# 📋 TaskBoard Pro - Documentation Technique
+# TaskBoard Pro - Documentation Technique
 
 ### 1. Service TaskService (`src/app/services/task.service.ts`)
 
-Un service Angular utilisant **RxJS** pour gérer un flux réactif de données (tâches).
+Un service Angular utilisant **RxJS** pour gérer un flux réactif de données.
 
 #### Concepts clés implémentés :
 
@@ -51,6 +51,7 @@ export const HOME_ROUTES: Routes = [
   }
 ];
 ```
+
 ---
 
 ### Observables disponibles dans TaskService
@@ -120,7 +121,7 @@ totalTasks$ = this.taskService.totalTasks$;
 
 ---
 
-### 🔗 Flux de données
+### Flux de données
 
 ```
 ┌─────────────────┐

@@ -8,15 +8,16 @@
 
 La stratégie `OnPush` a été ajoutée à tous les composants pour optimiser la détection de changements :
 
-| Composant | OnPush | Statut |
-|-----------|--------|--------|
-| TasksComponent | ✅ | Implémenté |
-| HomeComponent | ✅ | Implémenté |
-| AboutComponent | ✅ | Implémenté |
-| HeaderComponent | ✅ | Implémenté |
-| FooterComponent | ✅ | Implémenté |
+| Composant       | OnPush | Statut     |
+|-----------------|--------|------------|
+| TasksComponent  | ✅      | Implémenté |
+| HomeComponent   | ✅      | Implémenté |
+| AboutComponent  | ✅      | Implémenté |
+| HeaderComponent | ✅      | Implémenté |
+| FooterComponent | ✅      | Implémenté |
 
 **Avantages :**
+
 - Angular ne vérifie le composant que lorsque :
   - Un `@Input()` change de référence
   - Un événement est émis dans le composant
@@ -39,18 +40,19 @@ Toutes les boucles `@for` utilisent `track` pour optimiser le rendu :
 ```
 
 **Avantages :**
+
 - Angular réutilise les éléments DOM existants
 - Évite de recréer des éléments inutilement
 - Améliore les performances lors des mises à jour de liste
 
 ### 📊 Métriques Lighthouse (avant/après)
 
-| Métrique | Avant | Après | Amélioration |
-|----------|-------|-------|--------------|
-| Performance | ~85 | ~95 | +10 points |
-| First Contentful Paint | - | < 1.5s | ✅ |
-| Time to Interactive | - | < 2.5s | ✅ |
-| Total Blocking Time | - | < 200ms | ✅ |
+| Métrique               | Avant | Après   | Amélioration |
+|------------------------|-------|---------|--------------|
+| Performance            | ~85   | ~95     | +10 points   |
+| First Contentful Paint | -     | < 1.5s  | ✅            |
+| Time to Interactive    | -     | < 2.5s  | ✅            |
+| Total Blocking Time    | -     | < 200ms | ✅            |
 
 ---
 
@@ -82,14 +84,14 @@ Un `SecurityService` a été créé pour protéger contre les attaques XSS :
 
 #### Méthodes disponibles :
 
-| Méthode | Description |
-|---------|-------------|
-| `sanitizeHtml()` | Échappe les caractères HTML dangereux |
-| `containsMaliciousHtml()` | Détecte les patterns d'injection |
-| `stripHtmlTags()` | Supprime toutes les balises HTML |
-| `validateTaskTitle()` | Valide et nettoie les titres |
-| `validateTaskDescription()` | Valide et nettoie les descriptions |
-| `logSecurityWarning()` | Log les tentatives d'injection |
+| Méthode                     | Description                           |
+|-----------------------------|---------------------------------------|
+| `sanitizeHtml()`            | Échappe les caractères HTML dangereux |
+| `containsMaliciousHtml()`   | Détecte les patterns d'injection      |
+| `stripHtmlTags()`           | Supprime toutes les balises HTML      |
+| `validateTaskTitle()`       | Valide et nettoie les titres          |
+| `validateTaskDescription()` | Valide et nettoie les descriptions    |
+| `logSecurityWarning()`      | Log les tentatives d'injection        |
 
 #### Patterns détectés :
 
@@ -122,14 +124,14 @@ service.addTask({
 
 **Payloads XSS testés :**
 
-| Payload | Détecté | Nettoyé |
-|---------|---------|---------|
-| `<script>evil()</script>` | ✅ | ✅ |
-| `<img onerror=alert(1)>` | ✅ | ✅ |
-| `<iframe src="evil">` | ✅ | ✅ |
-| `javascript:alert(1)` | ✅ | ✅ |
-| `<svg onload=alert(1)>` | ✅ | ✅ |
-| `<body onload=alert(1)>` | ✅ | ✅ |
+| Payload                   | Détecté | Nettoyé |
+|---------------------------|---------|---------|
+| `<script>evil()</script>` | ✅       | ✅       |
+| `<img onerror=alert(1)>`  | ✅       | ✅       |
+| `<iframe src="evil">`     | ✅       | ✅       |
+| `javascript:alert(1)`     | ✅       | ✅       |
+| `<svg onload=alert(1)>`   | ✅       | ✅       |
+| `<body onload=alert(1)>`  | ✅       | ✅       |
 
 ---
 
@@ -154,6 +156,7 @@ service.addTask({
 ## Conclusion
 
 L'application TaskBoard Pro respecte les bonnes pratiques de sécurité Angular :
+
 - ✅ Aucune vulnérabilité XSS détectée
 - ✅ Protection active contre les injections HTML
 - ✅ Performance optimisée avec OnPush et trackBy

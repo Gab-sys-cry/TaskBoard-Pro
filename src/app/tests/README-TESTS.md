@@ -1,4 +1,4 @@
-# 🧪 Tests Unitaires - TaskBoard Pro
+# Tests Unitaires - TaskBoard Pro
 
 ## Vue d'ensemble
 
@@ -46,7 +46,8 @@ Pour isoler les tests, on crée des mocks des services :
 // Mock simple avec des valeurs
 const taskServiceMock = {
   tasks$: new BehaviorSubject<Task[]>([]).asObservable(),
-  addTask: () => {}
+  addTask: () => {
+  }
 };
 
 // Mock avec Jasmine Spy
@@ -94,22 +95,22 @@ it('devrait afficher le titre', () => {
 
 ### Tests de Service
 
-| Test | Description |
-|------|-------------|
-| Création | Vérifie que le service est créé |
-| Observables | Vérifie les flux de données |
-| Méthodes CRUD | Vérifie les opérations sur les données |
+| Test               | Description                            |
+|--------------------|----------------------------------------|
+| Création           | Vérifie que le service est créé        |
+| Observables        | Vérifie les flux de données            |
+| Méthodes CRUD      | Vérifie les opérations sur les données |
 | Effets secondaires | Vérifie les appels aux autres services |
 
 ### Tests de Composant
 
-| Test | Description |
-|------|-------------|
-| Création | Vérifie que le composant est créé |
+| Test           | Description                            |
+|----------------|----------------------------------------|
+| Création       | Vérifie que le composant est créé      |
 | @Input/@Output | Vérifie les propriétés d'entrée/sortie |
-| Rendu | Vérifie le contenu HTML généré |
-| Événements | Vérifie les interactions utilisateur |
-| Classes CSS | Vérifie les classes appliquées |
+| Rendu          | Vérifie le contenu HTML généré         |
+| Événements     | Vérifie les interactions utilisateur   |
+| Classes CSS    | Vérifie les classes appliquées         |
 
 ## Coverage
 
@@ -124,12 +125,4 @@ Le code coverage mesure le pourcentage de code testé :
 # Générer le rapport de coverage
 npm test -- --coverage
 ```
-
-## Bonnes pratiques
-
-1. **Isolation** : Chaque test doit être indépendant
-2. **AAA Pattern** : Arrange, Act, Assert
-3. **Nommage** : Descriptions claires et en français
-4. **Mocking** : Isoler les dépendances externes
-5. **Coverage** : Viser minimum 80% de couverture
 

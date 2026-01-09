@@ -1,17 +1,17 @@
 # TaskBoardPro
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.4.
-
 ### Qu'est-ce que le Lazy Loading ?
 
 Le **Lazy Loading** (chargement paresseux) est une technique d'optimisation qui consiste à charger les modules/composants uniquement quand l'utilisateur en a besoin, plutôt que de tout charger au démarrage de l'application.
 
 **Avantages :**
-- ⚡ Temps de chargement initial réduit
-- 📦 Bundles JavaScript séparés par feature
-- 🎯 Meilleure expérience utilisateur
+
+- Temps de chargement initial réduit
+- Bundles JavaScript séparés par feature
+- Meilleure expérience utilisateur
 
 **Implémentation avec `loadChildren()` :**
+
 ```typescript
 // app.routes.ts
 export const routes: Routes = [
@@ -39,32 +39,40 @@ Un **composant dynamique** est un composant qui n'est pas déclaré dans le temp
 - Charger des composants selon des conditions
 
 **Exemples dans ce projet :**
+
 - `TaskHighlightComponent` : Affiche une tâche mise en avant
 - `TaskEditComponent` : Formulaire d'édition de tâche
 
-### 🛠️ Comment fonctionne ViewContainerRef + createComponent()
+### Comment fonctionne ViewContainerRef + createComponent()
 
 **ViewContainerRef** est une référence à un conteneur dans le DOM où on peut injecter des composants dynamiquement.
 
 ```typescript
 // 1. Déclarer le conteneur dans le template
-<ng-container #dynamicComponentContainer></ng-container>
+<ng-container
+#dynamicComponentContainer > </ng-container>
 
 // 2. Récupérer la référence avec @ViewChild
-@ViewChild('dynamicComponentContainer', { read: ViewContainerRef }) 
-dynamicContainer!: ViewContainerRef;
+@ViewChild('dynamicComponentContainer', {read: ViewContainerRef})
+dynamicContainer!
+:
+ViewContainerRef;
 
 // 3. Créer le composant dynamiquement
-highlightTask(task: Task): void {
+highlightTask(task
+:
+Task
+):
+void {
   // Nettoyer le conteneur
   this.dynamicContainer.clear();
-  
+
   // Créer le composant
   const componentRef = this.dynamicContainer.createComponent(TaskHighlightComponent);
-  
+
   // Passer des données au composant
   componentRef.instance.task = task;
-  
+
   // S'abonner aux événements
   componentRef.instance.close.subscribe(() => {
     componentRef.destroy();
@@ -73,28 +81,32 @@ highlightTask(task: Task): void {
 ```
 
 **Cycle de vie :**
+
 1. `createComponent()` instancie le composant
 2. Les `@Input()` sont assignés via `.instance`
 3. Les `@Output()` sont écoutés via `.subscribe()`
 4. `destroy()` supprime le composant
 
-### 📢 Notifications avec tap()
+### Notifications avec tap()
 
 L'opérateur `tap()` de RxJS permet d'observer un flux **sans le modifier**. Idéal pour :
+
 - Logger des actions
 - Déclencher des effets secondaires
 - Afficher des notifications
 
 ```typescript
 // Dans TaskService
-addTask(task): void {
+addTask(task)
+:
+void {
   // ... logique d'ajout ...
-  
+
   // Observer avec tap() sans modifier le flux
   this.tasks$.pipe(
     tap(() => console.log('[TaskService] Tâche ajoutée'))
   ).subscribe().unsubscribe();
-  
+
   // Afficher notification
   this.notificationService.success('Tâche ajoutée !');
 }

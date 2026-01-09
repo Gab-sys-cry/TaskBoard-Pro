@@ -1,11 +1,11 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { HomeComponent } from './home';
-import { TaskService } from '../services/task.service';
-import { NotificationService } from '../core/services/notification.service';
-import { BehaviorSubject } from 'rxjs';
-import { Task } from '../models/task.model';
-import { vi, describe, it, expect, beforeEach } from 'vitest';
-import { provideRouter } from '@angular/router';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
+import {HomeComponent} from './home';
+import {TaskService} from '../services/task.service';
+import {NotificationService} from '../core/services/notification.service';
+import {BehaviorSubject} from 'rxjs';
+import {Task} from '../models/task.model';
+import {beforeEach, describe, expect, it} from 'vitest';
+import {provideRouter} from '@angular/router';
 
 /**
  * Tests unitaires pour HomeComponent
@@ -18,9 +18,9 @@ describe('HomeComponent', () => {
 
   // Données de test
   const mockTasks: Task[] = [
-    { id: 1, title: 'Task 1', description: 'Desc 1', completed: false, priority: 'high', createdAt: new Date() },
-    { id: 2, title: 'Task 2', description: 'Desc 2', completed: true, priority: 'medium', createdAt: new Date() },
-    { id: 3, title: 'Task 3', description: 'Desc 3', completed: false, priority: 'low', createdAt: new Date() }
+    {id: 1, title: 'Task 1', description: 'Desc 1', completed: false, priority: 'high', createdAt: new Date()},
+    {id: 2, title: 'Task 2', description: 'Desc 2', completed: true, priority: 'medium', createdAt: new Date()},
+    {id: 3, title: 'Task 3', description: 'Desc 3', completed: false, priority: 'low', createdAt: new Date()}
   ];
 
   beforeEach(async () => {
@@ -39,8 +39,8 @@ describe('HomeComponent', () => {
       imports: [HomeComponent],
       providers: [
         provideRouter([]),
-        { provide: TaskService, useValue: taskServiceMock },
-        { provide: NotificationService, useValue: {} }
+        {provide: TaskService, useValue: taskServiceMock},
+        {provide: NotificationService, useValue: {}}
       ]
     }).compileComponents();
 

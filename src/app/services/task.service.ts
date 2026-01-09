@@ -12,6 +12,7 @@ export class TaskService {
   private securityService = inject(SecurityService);
 
   // BehaviorSubject pour maintenir l'état des taches
+  // Création de quelques taches initiales pour la démo
   private tasksSubject = new BehaviorSubject<Task[]>([
     {
       id: 1,
@@ -101,7 +102,7 @@ export class TaskService {
 
     // Vérifier les tentatives d'injection
     if (this.securityService.containsMaliciousHtml(task.title) ||
-        this.securityService.containsMaliciousHtml(task.description)) {
+      this.securityService.containsMaliciousHtml(task.description)) {
       this.securityService.logSecurityWarning(task.title, 'task title/description');
       this.notificationService.warning('Contenu potentiellement dangereux détecté et nettoyé');
     }
@@ -110,13 +111,13 @@ export class TaskService {
 
     const currentTasks = this.tasksSubject.getValue();
     const newTask: Task = {
-      ...task,
+      ...task, // permet de copier completed et priority
       title: sanitizedTitle,
       description: sanitizedDescription,
       id: this.generateId(),
       createdAt: new Date()
     };
-    this.tasksSubject.next([...currentTasks, newTask]);
+    this.tasksSubject.next([...currentTasks, newTask]); // Ajout de la nouvelle tache
 
     // Notification avec tap()
     this.tasks$.pipe(
@@ -202,7 +203,7 @@ export class TaskService {
     this.notificationService.success(`Tâche modifiée avec succès !`);
   }
 
-  // Obtenir une tache par ID (retourne un Observable)
+  // Obtenir une tache par ID
   getTaskById(id: number): Observable<Task | undefined> {
     return this.tasks$.pipe(
       map(tasks => tasks.find(task => task.id === id))

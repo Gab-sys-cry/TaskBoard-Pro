@@ -41,50 +41,54 @@
 
   <!-- Barre de progression -->
   <div class="progress-bar-container">
-    <div class="progress-bar" [style.width.%]="progressPercentage$ | async"></div>
+    <div [style.width.%]="progressPercentage$ | async" class="progress-bar"></div>
   </div>
 
   <!-- Formulaire d'ajout -->
   <section class="add-task-section">
     <h2><i class="bi bi-plus-circle"></i> Nouvelle tâche</h2>
-    <form class="add-task-form" (submit)="$event.preventDefault(); addTask(taskTitle.value, taskDesc.value, taskPriority.value); taskTitle.value=''; taskDesc.value=''">
+    <form (submit)="$event.preventDefault(); addTask(taskTitle.value, taskDesc.value, taskPriority.value); taskTitle.value=''; taskDesc.value=''"
+          class="add-task-form">
       <div class="form-row">
-        <input #taskTitle type="text" placeholder="Titre de la tâche *" class="form-input" required>
+        <input #taskTitle class="form-input" placeholder="Titre de la tâche *" required type="text">
         <select #taskPriority class="form-select">
           <option value="low">Priorité basse</option>
-          <option value="medium" selected>Priorité moyenne</option>
+          <option selected value="medium">Priorité moyenne</option>
           <option value="high">Priorité haute</option>
         </select>
       </div>
       <div class="form-row">
-        <input #taskDesc type="text" placeholder="Description (optionnel)" class="form-input full-width">
-        <button type="submit" class="btn-add"><i class="bi bi-plus-lg"></i> Ajouter</button>
+        <input #taskDesc class="form-input full-width" placeholder="Description (optionnel)" type="text">
+        <button class="btn-add" type="submit"><i class="bi bi-plus-lg"></i> Ajouter</button>
       </div>
     </form>
   </section>
 
-  <!-- Conteneur des listes -->
   <div class="tasks-container">
     <!-- Tâches en cours -->
     <section class="tasks-column pending-column">
       <h2><i class="bi bi-hourglass-split"></i> En cours ({{ pendingCount$ | async }})</h2>
       <div class="tasks-list">
         @for (task of pendingTasks$ | async; track task.id) {
-          <div class="task-card" [class.priority-high]="task.priority === 'high'" [class.priority-medium]="task.priority === 'medium'" [class.priority-low]="task.priority === 'low'">
+          <div [class.priority-high]="task.priority === 'high'" [class.priority-low]="task.priority === 'low'"
+               [class.priority-medium]="task.priority === 'medium'" class="task-card">
             <div class="task-main">
-              <input type="checkbox" [checked]="task.completed" (change)="toggleTask(task.id)" class="task-checkbox">
+              <input (change)="toggleTask(task.id)" [checked]="task.completed" class="task-checkbox" type="checkbox">
               <div class="task-content">
                 <h3>{{ task.title }}</h3>
                 <p>{{ task.description }}</p>
               </div>
-              <span class="priority-badge" [class]="task.priority">{{ task.priority }}</span>
+              <span [class]="task.priority" class="priority-badge">{{ task.priority }}</span>
             </div>
             <div class="task-actions">
-              <span class="task-date"><i class="bi bi-calendar3"></i> {{ task.createdAt | date:'dd/MM/yyyy HH:mm' }}</span>
+              <span class="task-date"><i
+                class="bi bi-calendar3"></i> {{ task.createdAt | date:'dd/MM/yyyy HH:mm' }}</span>
               <div class="action-buttons">
-                <button class="btn-highlight" (click)="highlightTask(task)" title="Mettre en avant"><i class="bi bi-star"></i></button>
-                <button class="btn-edit" (click)="editTask(task)" title="Éditer"><i class="bi bi-pencil"></i></button>
-                <button class="btn-delete" (click)="deleteTask(task.id)" title="Supprimer"><i class="bi bi-trash"></i></button>
+                <button (click)="highlightTask(task)" class="btn-highlight" title="Mettre en avant"><i
+                  class="bi bi-star"></i></button>
+                <button (click)="editTask(task)" class="btn-edit" title="Éditer"><i class="bi bi-pencil"></i></button>
+                <button (click)="deleteTask(task.id)" class="btn-delete" title="Supprimer"><i class="bi bi-trash"></i>
+                </button>
               </div>
             </div>
           </div>
@@ -97,25 +101,28 @@
       </div>
     </section>
 
-    <!-- Tâches terminées -->
+    <!-- Taches terminées -->
     <section class="tasks-column completed-column">
       <h2><i class="bi bi-check-circle"></i> Terminées ({{ completedCount$ | async }})</h2>
       <div class="tasks-list">
         @for (task of completedTasks$ | async; track task.id) {
           <div class="task-card completed">
             <div class="task-main">
-              <input type="checkbox" [checked]="task.completed" (change)="toggleTask(task.id)" class="task-checkbox">
+              <input (change)="toggleTask(task.id)" [checked]="task.completed" class="task-checkbox" type="checkbox">
               <div class="task-content">
                 <h3>{{ task.title }}</h3>
                 <p>{{ task.description }}</p>
               </div>
             </div>
             <div class="task-actions">
-              <span class="task-date"><i class="bi bi-calendar3"></i> {{ task.createdAt | date:'dd/MM/yyyy HH:mm' }}</span>
+              <span class="task-date"><i
+                class="bi bi-calendar3"></i> {{ task.createdAt | date:'dd/MM/yyyy HH:mm' }}</span>
               <div class="action-buttons">
-                <button class="btn-highlight" (click)="highlightTask(task)" title="Mettre en avant"><i class="bi bi-star"></i></button>
-                <button class="btn-edit" (click)="editTask(task)" title="Éditer"><i class="bi bi-pencil"></i></button>
-                <button class="btn-delete" (click)="deleteTask(task.id)" title="Supprimer"><i class="bi bi-trash"></i></button>
+                <button (click)="highlightTask(task)" class="btn-highlight" title="Mettre en avant"><i
+                  class="bi bi-star"></i></button>
+                <button (click)="editTask(task)" class="btn-edit" title="Éditer"><i class="bi bi-pencil"></i></button>
+                <button (click)="deleteTask(task.id)" class="btn-delete" title="Supprimer"><i class="bi bi-trash"></i>
+                </button>
               </div>
             </div>
           </div>

@@ -1,9 +1,9 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { AboutComponent } from './about';
-import { TaskService } from '../services/task.service';
-import { NotificationService } from '../core/services/notification.service';
-import { BehaviorSubject } from 'rxjs';
-import { vi, describe, it, expect, beforeEach } from 'vitest';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
+import {AboutComponent} from './about';
+import {TaskService} from '../services/task.service';
+import {NotificationService} from '../core/services/notification.service';
+import {BehaviorSubject} from 'rxjs';
+import {beforeEach, describe, expect, it} from 'vitest';
 
 /**
  * Tests unitaires pour AboutComponent
@@ -24,8 +24,8 @@ describe('AboutComponent', () => {
     await TestBed.configureTestingModule({
       imports: [AboutComponent],
       providers: [
-        { provide: TaskService, useValue: taskServiceMock },
-        { provide: NotificationService, useValue: {} }
+        {provide: TaskService, useValue: taskServiceMock},
+        {provide: NotificationService, useValue: {}}
       ]
     }).compileComponents();
 

