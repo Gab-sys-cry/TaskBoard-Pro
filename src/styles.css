@@ -48,7 +48,8 @@ body {
   background: var(--bg-gradient);
   color: var(--text-primary);
   min-height: 100vh;
-  contain: layout style paint;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 /* Glass Card Base */
