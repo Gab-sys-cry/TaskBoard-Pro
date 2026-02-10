@@ -1,0 +1,4442 @@
+{
+  "version": 1,
+  "buffer": [
+    {
+      "source": "",
+      "duration": 3.299999713897705,
+      "directives": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": {
+                        "ngOnChanges": 0.19999980926513672
+                      },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": {
+                        "ngOnChanges": 0
+                      },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": {
+                        "ngOnChanges": 0
+                      },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": {
+                    "RouterLink_click_HostBindingHandler": 2.4000000953674316
+                  },
+                  "name": "_HeaderComponent",
+                  "changeDetection": 0.19999980926513672
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_NotificationsComponent",
+                  "changeDetection": 0.5
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isComponent": false,
+                  "isElement": false,
+                  "name": "_RouterOutlet",
+                  "outputs": { },
+                  "lifecycle": {
+                    "ngOnChanges": 0
+                  },
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_HomeComponent"
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_FooterComponent"
+                }
+              ],
+              "type": "element"
+            }
+          ],
+          "directives": [
+            {
+              "isElement": false,
+              "isComponent": true,
+              "lifecycle": { },
+              "outputs": { },
+              "name": "_App",
+              "changeDetection": 0.09999990463256836
+            }
+          ],
+          "type": "element"
+        }
+      ]
+    },
+    {
+      "source": "",
+      "duration": 9.599999904632568,
+      "directives": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": {
+                        "ngOnChanges": 0
+                      },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": {
+                        "ngOnChanges": 0
+                      },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": {
+                        "ngOnChanges": 0
+                      },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_HeaderComponent",
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_NotificationsComponent",
+                  "changeDetection": 0.2999997138977051
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isComponent": false,
+                  "isElement": false,
+                  "name": "_RouterOutlet",
+                  "outputs": { },
+                  "lifecycle": {
+                    "ngOnChanges": 0.10000038146972656
+                  },
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": {
+                        "ngOnDestroy": 0.09999990463256836
+                      },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_HomeComponent"
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_FooterComponent"
+                }
+              ],
+              "type": "element"
+            }
+          ],
+          "directives": [
+            {
+              "isElement": false,
+              "isComponent": true,
+              "lifecycle": { },
+              "outputs": { },
+              "name": "_App",
+              "changeDetection": 9
+            }
+          ],
+          "type": "element"
+        }
+      ]
+    },
+    {
+      "source": "",
+      "duration": 1.299999713897705,
+      "directives": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_HeaderComponent"
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_NotificationsComponent",
+                  "changeDetection": 0.09999990463256836
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isComponent": false,
+                  "isElement": false,
+                  "name": "_RouterOutlet",
+                  "outputs": { },
+                  "lifecycle": {
+                    "ngOnChanges": 0.09999990463256836
+                  },
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "isComponent": false,
+                      "lifecycle": { },
+                      "outputs": { }
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_TasksComponent",
+                  "changeDetection": 1.0999999046325684
+                },
+                {
+                  "isElement": false,
+                  "name": "_HomeComponent",
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { }
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_FooterComponent"
+                }
+              ],
+              "type": "element"
+            }
+          ],
+          "directives": [
+            {
+              "isElement": false,
+              "isComponent": true,
+              "lifecycle": { },
+              "outputs": { },
+              "name": "_App",
+              "changeDetection": 0
+            }
+          ],
+          "type": "element"
+        }
+      ]
+    },
+    {
+      "source": "",
+      "duration": 1.1000003814697266,
+      "directives": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_HeaderComponent"
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_NotificationsComponent",
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isComponent": false,
+                  "isElement": false,
+                  "name": "_RouterOutlet",
+                  "outputs": { },
+                  "lifecycle": {
+                    "ngOnChanges": 0
+                  },
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isElement": false,
+                      "isComponent": true,
+                      "lifecycle": { },
+                      "outputs": {
+                        "TaskHighlightComponent_Template_button_click_2_listener": 0.9000000953674316
+                      },
+                      "name": "_TaskHighlightComponent",
+                      "changeDetection": 0
+                    },
+                    {
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "isComponent": false,
+                      "lifecycle": { },
+                      "outputs": { }
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_TasksComponent",
+                  "changeDetection": 0.09999990463256836
+                },
+                {
+                  "isElement": false,
+                  "name": "_HomeComponent",
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { }
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_FooterComponent"
+                }
+              ],
+              "type": "element"
+            }
+          ],
+          "directives": [
+            {
+              "isElement": false,
+              "isComponent": true,
+              "lifecycle": { },
+              "outputs": { },
+              "name": "_App",
+              "changeDetection": 0.10000038146972656
+            }
+          ],
+          "type": "element"
+        }
+      ]
+    },
+    {
+      "source": "",
+      "duration": 0.5000004768371582,
+      "directives": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_HeaderComponent"
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_NotificationsComponent",
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isComponent": false,
+                  "isElement": false,
+                  "name": "_RouterOutlet",
+                  "outputs": { },
+                  "lifecycle": {
+                    "ngOnChanges": 0
+                  },
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "isComponent": false,
+                      "lifecycle": { },
+                      "outputs": { }
+                    },
+                    {
+                      "isElement": false,
+                      "name": "_TaskHighlightComponent",
+                      "isComponent": true,
+                      "lifecycle": { },
+                      "outputs": { }
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_TasksComponent",
+                  "changeDetection": 0.40000009536743164
+                },
+                {
+                  "isElement": false,
+                  "name": "_HomeComponent",
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { }
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_FooterComponent"
+                }
+              ],
+              "type": "element"
+            }
+          ],
+          "directives": [
+            {
+              "isElement": false,
+              "isComponent": true,
+              "lifecycle": { },
+              "outputs": { },
+              "name": "_App",
+              "changeDetection": 0.10000038146972656
+            }
+          ],
+          "type": "element"
+        }
+      ]
+    },
+    {
+      "source": "",
+      "duration": 1.200000286102295,
+      "directives": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_HeaderComponent"
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_NotificationsComponent",
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isComponent": false,
+                  "isElement": false,
+                  "name": "_RouterOutlet",
+                  "outputs": { },
+                  "lifecycle": {
+                    "ngOnChanges": 0
+                  },
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isElement": false,
+                      "isComponent": true,
+                      "lifecycle": { },
+                      "outputs": {
+                        "TaskHighlightComponent_Template_button_click_2_listener": 1
+                      },
+                      "name": "_TaskHighlightComponent",
+                      "changeDetection": 0
+                    },
+                    {
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "isComponent": false,
+                      "lifecycle": { },
+                      "outputs": { }
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_TasksComponent",
+                  "changeDetection": 0.10000038146972656
+                },
+                {
+                  "isElement": false,
+                  "name": "_HomeComponent",
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { }
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_FooterComponent"
+                }
+              ],
+              "type": "element"
+            }
+          ],
+          "directives": [
+            {
+              "isElement": false,
+              "isComponent": true,
+              "lifecycle": { },
+              "outputs": { },
+              "name": "_App",
+              "changeDetection": 0.09999990463256836
+            }
+          ],
+          "type": "element"
+        }
+      ]
+    },
+    {
+      "source": "",
+      "duration": 2.6999998092651367,
+      "directives": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_HeaderComponent"
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_NotificationsComponent",
+                  "changeDetection": 0.7999997138977051
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isComponent": false,
+                  "isElement": false,
+                  "name": "_RouterOutlet",
+                  "outputs": { },
+                  "lifecycle": {
+                    "ngOnChanges": 0
+                  },
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "isComponent": false,
+                      "lifecycle": { },
+                      "outputs": { }
+                    },
+                    {
+                      "isElement": false,
+                      "name": "_TaskHighlightComponent",
+                      "isComponent": true,
+                      "lifecycle": { },
+                      "outputs": { },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_TasksComponent",
+                  "changeDetection": 1.8000001907348633
+                },
+                {
+                  "isElement": false,
+                  "name": "_HomeComponent",
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { }
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_FooterComponent"
+                }
+              ],
+              "type": "element"
+            }
+          ],
+          "directives": [
+            {
+              "isElement": false,
+              "isComponent": true,
+              "lifecycle": { },
+              "outputs": { },
+              "name": "_App",
+              "changeDetection": 0.09999990463256836
+            }
+          ],
+          "type": "element"
+        }
+      ]
+    },
+    {
+      "source": "",
+      "duration": 2.5999999046325684,
+      "directives": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_HeaderComponent"
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_NotificationsComponent",
+                  "changeDetection": 0.2999997138977051
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isComponent": false,
+                  "isElement": false,
+                  "name": "_RouterOutlet",
+                  "outputs": { },
+                  "lifecycle": {
+                    "ngOnChanges": 0
+                  },
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "isComponent": false,
+                      "lifecycle": { },
+                      "outputs": { }
+                    },
+                    {
+                      "isElement": false,
+                      "name": "_TaskHighlightComponent",
+                      "isComponent": true,
+                      "lifecycle": { },
+                      "outputs": { },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_TasksComponent",
+                  "changeDetection": 2.200000286102295
+                },
+                {
+                  "isElement": false,
+                  "name": "_HomeComponent",
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { }
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_FooterComponent"
+                }
+              ],
+              "type": "element"
+            }
+          ],
+          "directives": [
+            {
+              "isElement": false,
+              "isComponent": true,
+              "lifecycle": { },
+              "outputs": { },
+              "name": "_App",
+              "changeDetection": 0.09999990463256836
+            }
+          ],
+          "type": "element"
+        }
+      ]
+    },
+    {
+      "source": "",
+      "duration": 0.6999998092651367,
+      "directives": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_HeaderComponent"
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_NotificationsComponent",
+                  "changeDetection": 0.6999998092651367
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isComponent": false,
+                  "isElement": false,
+                  "name": "_RouterOutlet",
+                  "outputs": { },
+                  "lifecycle": {
+                    "ngOnChanges": 0
+                  },
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "isComponent": false,
+                      "lifecycle": { },
+                      "outputs": { }
+                    },
+                    {
+                      "isElement": false,
+                      "name": "_TaskHighlightComponent",
+                      "isComponent": true,
+                      "lifecycle": { },
+                      "outputs": { },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_TasksComponent"
+                },
+                {
+                  "isElement": false,
+                  "name": "_HomeComponent",
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { }
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_FooterComponent"
+                }
+              ],
+              "type": "element"
+            }
+          ],
+          "directives": [
+            {
+              "isElement": false,
+              "isComponent": true,
+              "lifecycle": { },
+              "outputs": { },
+              "name": "_App",
+              "changeDetection": 0
+            }
+          ],
+          "type": "element"
+        }
+      ]
+    },
+    {
+      "source": "",
+      "duration": 3.5,
+      "directives": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_HeaderComponent"
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_NotificationsComponent",
+                  "changeDetection": 0.2999997138977051
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isComponent": false,
+                  "isElement": false,
+                  "name": "_RouterOutlet",
+                  "outputs": { },
+                  "lifecycle": {
+                    "ngOnChanges": 0
+                  },
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "isComponent": false,
+                      "lifecycle": { },
+                      "outputs": { }
+                    },
+                    {
+                      "isElement": false,
+                      "name": "_TaskHighlightComponent",
+                      "isComponent": true,
+                      "lifecycle": { },
+                      "outputs": { },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_TasksComponent",
+                  "changeDetection": 3.0999999046325684
+                },
+                {
+                  "isElement": false,
+                  "name": "_HomeComponent",
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { }
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_FooterComponent"
+                }
+              ],
+              "type": "element"
+            }
+          ],
+          "directives": [
+            {
+              "isElement": false,
+              "isComponent": true,
+              "lifecycle": { },
+              "outputs": { },
+              "name": "_App",
+              "changeDetection": 0.10000038146972656
+            }
+          ],
+          "type": "element"
+        }
+      ]
+    },
+    {
+      "source": "",
+      "duration": 1.200000286102295,
+      "directives": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_HeaderComponent"
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_NotificationsComponent",
+                  "changeDetection": 0.9000000953674316
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isComponent": false,
+                  "isElement": false,
+                  "name": "_RouterOutlet",
+                  "outputs": { },
+                  "lifecycle": {
+                    "ngOnChanges": 0
+                  },
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_TasksComponent"
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_FooterComponent"
+                }
+              ],
+              "type": "element"
+            }
+          ],
+          "directives": [
+            {
+              "isElement": false,
+              "isComponent": true,
+              "lifecycle": { },
+              "outputs": { },
+              "name": "_App",
+              "changeDetection": 0.3000001907348633
+            }
+          ],
+          "type": "element"
+        }
+      ]
+    },
+    {
+      "source": "",
+      "duration": 0.4999995231628418,
+      "directives": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_HeaderComponent"
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_NotificationsComponent",
+                  "changeDetection": 0.39999961853027344
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isComponent": false,
+                  "isElement": false,
+                  "name": "_RouterOutlet",
+                  "outputs": { },
+                  "lifecycle": {
+                    "ngOnChanges": 0
+                  },
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "isComponent": false,
+                      "lifecycle": { },
+                      "outputs": { }
+                    },
+                    {
+                      "isElement": false,
+                      "name": "_TaskHighlightComponent",
+                      "isComponent": true,
+                      "lifecycle": { },
+                      "outputs": { },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_TasksComponent"
+                },
+                {
+                  "isElement": false,
+                  "name": "_HomeComponent",
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { }
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_FooterComponent"
+                }
+              ],
+              "type": "element"
+            }
+          ],
+          "directives": [
+            {
+              "isElement": false,
+              "isComponent": true,
+              "lifecycle": { },
+              "outputs": { },
+              "name": "_App",
+              "changeDetection": 0.09999990463256836
+            }
+          ],
+          "type": "element"
+        }
+      ]
+    },
+    {
+      "source": "",
+      "duration": 3.8000001907348633,
+      "directives": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_HeaderComponent"
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_NotificationsComponent",
+                  "changeDetection": 0.2999997138977051
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isComponent": false,
+                  "isElement": false,
+                  "name": "_RouterOutlet",
+                  "outputs": { },
+                  "lifecycle": {
+                    "ngOnChanges": 0
+                  },
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "isComponent": false,
+                      "lifecycle": { },
+                      "outputs": { }
+                    },
+                    {
+                      "isElement": false,
+                      "name": "_TaskHighlightComponent",
+                      "isComponent": true,
+                      "lifecycle": { },
+                      "outputs": { },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": {
+                    "TasksComponent_Template_form_submit_68_listener": 2.200000286102295
+                  },
+                  "name": "_TasksComponent",
+                  "changeDetection": 1.3000001907348633
+                },
+                {
+                  "isElement": false,
+                  "name": "_HomeComponent",
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { }
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_FooterComponent"
+                }
+              ],
+              "type": "element"
+            }
+          ],
+          "directives": [
+            {
+              "isElement": false,
+              "isComponent": true,
+              "lifecycle": { },
+              "outputs": { },
+              "name": "_App",
+              "changeDetection": 0
+            }
+          ],
+          "type": "element"
+        }
+      ]
+    },
+    {
+      "source": "",
+      "duration": 0.39999961853027344,
+      "directives": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_HeaderComponent"
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_NotificationsComponent",
+                  "changeDetection": 0.2999997138977051
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isComponent": false,
+                  "isElement": false,
+                  "name": "_RouterOutlet",
+                  "outputs": { },
+                  "lifecycle": {
+                    "ngOnChanges": 0
+                  },
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "isComponent": false,
+                      "lifecycle": { },
+                      "outputs": { }
+                    },
+                    {
+                      "isElement": false,
+                      "name": "_TaskHighlightComponent",
+                      "isComponent": true,
+                      "lifecycle": { },
+                      "outputs": { },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_TasksComponent"
+                },
+                {
+                  "isElement": false,
+                  "name": "_HomeComponent",
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { }
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_FooterComponent"
+                }
+              ],
+              "type": "element"
+            }
+          ],
+          "directives": [
+            {
+              "isElement": false,
+              "isComponent": true,
+              "lifecycle": { },
+              "outputs": { },
+              "name": "_App",
+              "changeDetection": 0.09999990463256836
+            }
+          ],
+          "type": "element"
+        }
+      ]
+    },
+    {
+      "source": "",
+      "duration": 3.3999996185302734,
+      "directives": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_HeaderComponent"
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_NotificationsComponent",
+                  "changeDetection": 0.39999961853027344
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isComponent": false,
+                  "isElement": false,
+                  "name": "_RouterOutlet",
+                  "outputs": { },
+                  "lifecycle": {
+                    "ngOnChanges": 0
+                  },
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "isComponent": false,
+                      "lifecycle": { },
+                      "outputs": { }
+                    },
+                    {
+                      "isElement": false,
+                      "name": "_TaskHighlightComponent",
+                      "isComponent": true,
+                      "lifecycle": { },
+                      "outputs": { },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_TasksComponent",
+                  "changeDetection": 2.9000000953674316
+                },
+                {
+                  "isElement": false,
+                  "name": "_HomeComponent",
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { }
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_FooterComponent"
+                }
+              ],
+              "type": "element"
+            }
+          ],
+          "directives": [
+            {
+              "isElement": false,
+              "isComponent": true,
+              "lifecycle": { },
+              "outputs": { },
+              "name": "_App",
+              "changeDetection": 0.09999990463256836
+            }
+          ],
+          "type": "element"
+        }
+      ]
+    },
+    {
+      "source": "",
+      "duration": 0.5999999046325684,
+      "directives": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_HeaderComponent"
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_NotificationsComponent",
+                  "changeDetection": 0.5
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isComponent": false,
+                  "isElement": false,
+                  "name": "_RouterOutlet",
+                  "outputs": { },
+                  "lifecycle": {
+                    "ngOnChanges": 0
+                  },
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "isComponent": false,
+                      "lifecycle": { },
+                      "outputs": { }
+                    },
+                    {
+                      "isElement": false,
+                      "name": "_TaskHighlightComponent",
+                      "isComponent": true,
+                      "lifecycle": { },
+                      "outputs": { },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_TasksComponent"
+                },
+                {
+                  "isElement": false,
+                  "name": "_HomeComponent",
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { }
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_FooterComponent"
+                }
+              ],
+              "type": "element"
+            }
+          ],
+          "directives": [
+            {
+              "isElement": false,
+              "isComponent": true,
+              "lifecycle": { },
+              "outputs": { },
+              "name": "_App",
+              "changeDetection": 0.09999990463256836
+            }
+          ],
+          "type": "element"
+        }
+      ]
+    },
+    {
+      "source": "",
+      "duration": 2091.2000002861023,
+      "directives": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_HeaderComponent"
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_NotificationsComponent",
+                  "changeDetection": 0.19999980926513672
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isComponent": false,
+                  "isElement": false,
+                  "name": "_RouterOutlet",
+                  "outputs": { },
+                  "lifecycle": {
+                    "ngOnChanges": 0
+                  },
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": {
+                    "TasksComponent_Template_button_click_53_listener": 2088
+                  },
+                  "name": "_TasksComponent",
+                  "changeDetection": 2.8000001907348633
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_FooterComponent"
+                }
+              ],
+              "type": "element"
+            }
+          ],
+          "directives": [
+            {
+              "isElement": false,
+              "isComponent": true,
+              "lifecycle": { },
+              "outputs": { },
+              "name": "_App",
+              "changeDetection": 0.20000028610229492
+            }
+          ],
+          "type": "element"
+        }
+      ]
+    },
+    {
+      "source": "",
+      "duration": 2.200000286102295,
+      "directives": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_HeaderComponent"
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_NotificationsComponent",
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isComponent": false,
+                  "isElement": false,
+                  "name": "_RouterOutlet",
+                  "outputs": { },
+                  "lifecycle": {
+                    "ngOnChanges": 0.10000038146972656
+                  },
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "isComponent": false,
+                      "lifecycle": { },
+                      "outputs": { }
+                    },
+                    {
+                      "isElement": false,
+                      "name": "_TaskHighlightComponent",
+                      "isComponent": true,
+                      "lifecycle": { },
+                      "outputs": { },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": {
+                    "TasksComponent_Template_button_click_56_listener": 2
+                  },
+                  "name": "_TasksComponent",
+                  "changeDetection": 0
+                },
+                {
+                  "isElement": false,
+                  "name": "_HomeComponent",
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { }
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_FooterComponent"
+                }
+              ],
+              "type": "element"
+            }
+          ],
+          "directives": [
+            {
+              "isElement": false,
+              "isComponent": true,
+              "lifecycle": { },
+              "outputs": { },
+              "name": "_App",
+              "changeDetection": 0.09999990463256836
+            }
+          ],
+          "type": "element"
+        }
+      ]
+    },
+    {
+      "source": "",
+      "duration": 1.4000000953674316,
+      "directives": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_HeaderComponent"
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_NotificationsComponent",
+                  "changeDetection": 1.0999999046325684
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isComponent": false,
+                  "isElement": false,
+                  "name": "_RouterOutlet",
+                  "outputs": { },
+                  "lifecycle": {
+                    "ngOnChanges": 0.09999990463256836
+                  },
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "isComponent": false,
+                      "lifecycle": { },
+                      "outputs": { }
+                    },
+                    {
+                      "isElement": false,
+                      "name": "_TaskHighlightComponent",
+                      "isComponent": true,
+                      "lifecycle": { },
+                      "outputs": { },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_TasksComponent"
+                },
+                {
+                  "isElement": false,
+                  "name": "_HomeComponent",
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { }
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_FooterComponent"
+                }
+              ],
+              "type": "element"
+            }
+          ],
+          "directives": [
+            {
+              "isElement": false,
+              "isComponent": true,
+              "lifecycle": { },
+              "outputs": { },
+              "name": "_App",
+              "changeDetection": 0.20000028610229492
+            }
+          ],
+          "type": "element"
+        }
+      ]
+    },
+    {
+      "source": "",
+      "duration": 0.8999996185302734,
+      "directives": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_HeaderComponent"
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_NotificationsComponent",
+                  "changeDetection": 0.09999990463256836
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isComponent": false,
+                  "isElement": false,
+                  "name": "_RouterOutlet",
+                  "outputs": { },
+                  "lifecycle": {
+                    "ngOnChanges": 0
+                  },
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "isComponent": false,
+                      "lifecycle": { },
+                      "outputs": { }
+                    },
+                    {
+                      "isElement": false,
+                      "name": "_TaskHighlightComponent",
+                      "isComponent": true,
+                      "lifecycle": { },
+                      "outputs": { },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": {
+                    "TasksComponent_Template_input_change_62_listener": 0.6999998092651367
+                  },
+                  "name": "_TasksComponent",
+                  "changeDetection": 0
+                },
+                {
+                  "isElement": false,
+                  "name": "_HomeComponent",
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { }
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_FooterComponent"
+                }
+              ],
+              "type": "element"
+            }
+          ],
+          "directives": [
+            {
+              "isElement": false,
+              "isComponent": true,
+              "lifecycle": { },
+              "outputs": { },
+              "name": "_App",
+              "changeDetection": 0.09999990463256836
+            }
+          ],
+          "type": "element"
+        }
+      ]
+    },
+    {
+      "source": "",
+      "duration": 1.3000001907348633,
+      "directives": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_HeaderComponent"
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_NotificationsComponent",
+                  "changeDetection": 0.8000001907348633
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isComponent": false,
+                  "isElement": false,
+                  "name": "_RouterOutlet",
+                  "outputs": { },
+                  "lifecycle": {
+                    "ngOnChanges": 0
+                  },
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_TasksComponent",
+                  "changeDetection": 0.5
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_FooterComponent"
+                }
+              ],
+              "type": "element"
+            }
+          ],
+          "directives": [
+            {
+              "isElement": false,
+              "isComponent": true,
+              "lifecycle": { },
+              "outputs": { },
+              "name": "_App",
+              "changeDetection": 0
+            }
+          ],
+          "type": "element"
+        }
+      ]
+    },
+    {
+      "source": "",
+      "duration": 0.5,
+      "directives": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": { }
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_HeaderComponent"
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_NotificationsComponent",
+                  "changeDetection": 0.40000009536743164
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isComponent": false,
+                  "isElement": false,
+                  "name": "_RouterOutlet",
+                  "outputs": { },
+                  "lifecycle": {
+                    "ngOnChanges": 0
+                  },
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "isComponent": false,
+                      "lifecycle": { },
+                      "outputs": { }
+                    },
+                    {
+                      "isElement": false,
+                      "name": "_TaskHighlightComponent",
+                      "isComponent": true,
+                      "lifecycle": { },
+                      "outputs": { },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_TasksComponent"
+                },
+                {
+                  "isElement": false,
+                  "name": "_HomeComponent",
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { }
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_FooterComponent"
+                }
+              ],
+              "type": "element"
+            }
+          ],
+          "directives": [
+            {
+              "isElement": false,
+              "isComponent": true,
+              "lifecycle": { },
+              "outputs": { },
+              "name": "_App",
+              "changeDetection": 0.09999990463256836
+            }
+          ],
+          "type": "element"
+        }
+      ]
+    },
+    {
+      "source": "",
+      "duration": 2.4000000953674316,
+      "directives": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": {
+                        "ngOnChanges": 0
+                      },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": {
+                        "ngOnChanges": 0
+                      },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": {
+                        "ngOnChanges": 0
+                      },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": {
+                    "RouterLink_click_HostBindingHandler": 2.0999999046325684
+                  },
+                  "name": "_HeaderComponent",
+                  "changeDetection": 0.20000028610229492
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_NotificationsComponent",
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isComponent": false,
+                  "isElement": false,
+                  "name": "_RouterOutlet",
+                  "outputs": { },
+                  "lifecycle": {
+                    "ngOnChanges": 0
+                  },
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "isComponent": false,
+                      "lifecycle": { },
+                      "outputs": { }
+                    },
+                    {
+                      "isElement": false,
+                      "name": "_TaskHighlightComponent",
+                      "isComponent": true,
+                      "lifecycle": { },
+                      "outputs": { },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_TasksComponent"
+                },
+                {
+                  "isElement": false,
+                  "name": "_HomeComponent",
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { }
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_FooterComponent"
+                }
+              ],
+              "type": "element"
+            }
+          ],
+          "directives": [
+            {
+              "isElement": false,
+              "isComponent": true,
+              "lifecycle": { },
+              "outputs": { },
+              "name": "_App",
+              "changeDetection": 0.09999990463256836
+            }
+          ],
+          "type": "element"
+        }
+      ]
+    },
+    {
+      "source": "",
+      "duration": 0.19999980926513672,
+      "directives": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": {
+                        "ngOnChanges": 0
+                      },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": {
+                        "ngOnChanges": 0
+                      },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": {
+                        "ngOnChanges": 0
+                      },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_HeaderComponent",
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_NotificationsComponent",
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isComponent": false,
+                  "isElement": false,
+                  "name": "_RouterOutlet",
+                  "outputs": { },
+                  "lifecycle": {
+                    "ngOnChanges": 0.09999990463256836
+                  },
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_TasksComponent"
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_FooterComponent"
+                }
+              ],
+              "type": "element"
+            }
+          ],
+          "directives": [
+            {
+              "isElement": false,
+              "isComponent": true,
+              "lifecycle": { },
+              "outputs": { },
+              "name": "_App",
+              "changeDetection": 0.09999990463256836
+            }
+          ],
+          "type": "element"
+        }
+      ]
+    },
+    {
+      "source": "",
+      "duration": 1.3000001907348633,
+      "directives": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": {
+                        "ngOnChanges": 0
+                      },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": {
+                        "ngOnChanges": 0
+                      },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                },
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "outputs": { },
+                      "lifecycle": { }
+                    },
+                    {
+                      "isComponent": false,
+                      "isElement": false,
+                      "name": "_RouterLinkActive",
+                      "outputs": { },
+                      "lifecycle": {
+                        "ngOnChanges": 0
+                      },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": {
+                    "RouterLink_click_HostBindingHandler": 1.0999999046325684
+                  },
+                  "name": "_HeaderComponent",
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_NotificationsComponent",
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isComponent": false,
+                  "isElement": false,
+                  "name": "_RouterOutlet",
+                  "outputs": { },
+                  "lifecycle": {
+                    "ngOnChanges": 0
+                  },
+                  "changeDetection": 0
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [
+                {
+                  "children": [ ],
+                  "directives": [
+                    {
+                      "isElement": false,
+                      "name": "_RouterLink",
+                      "isComponent": false,
+                      "lifecycle": { },
+                      "outputs": { }
+                    },
+                    {
+                      "isElement": false,
+                      "name": "_TaskHighlightComponent",
+                      "isComponent": true,
+                      "lifecycle": { },
+                      "outputs": { },
+                      "changeDetection": 0
+                    }
+                  ],
+                  "type": "element"
+                }
+              ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_AboutComponent",
+                  "changeDetection": 0
+                },
+                {
+                  "isElement": false,
+                  "name": "_HomeComponent",
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { }
+                },
+                {
+                  "isElement": false,
+                  "name": "_TasksComponent",
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { }
+                }
+              ],
+              "type": "element"
+            },
+            {
+              "children": [ ],
+              "directives": [
+                {
+                  "isElement": false,
+                  "isComponent": true,
+                  "lifecycle": { },
+                  "outputs": { },
+                  "name": "_FooterComponent"
+                }
+              ],
+              "type": "element"
+            }
+          ],
+          "directives": [
+            {
+              "isElement": false,
+              "isComponent": true,
+              "lifecycle": { },
+              "outputs": { },
+              "name": "_App",
+              "changeDetection": 0.20000028610229492
+            }
+          ],
+          "type": "element"
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,10 @@
 @import 'bootstrap-icons/font/bootstrap-icons.css';
 
+@font-face {
+  font-family: 'bootstrap-icons';
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,11 +30,12 @@
   --glass-border: rgba(255, 255, 255, 0.1);
   --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   --glass-blur: blur(12px);
-
   --success: #10b981;
   --warning: #f59e0b;
   --danger: #ef4444;
   --info: #3b82f6;
+
+  font-size: 16px;
 }
 
 html, body {
@@ -42,6 +48,7 @@ body {
   background: var(--bg-gradient);
   color: var(--text-primary);
   min-height: 100vh;
+  contain: layout style paint;
 }
 
 /* Glass Card Base */
@@ -52,6 +59,8 @@ body {
   border: 1px solid var(--glass-border);
   border-radius: 16px;
   box-shadow: var(--glass-shadow);
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 /* Scrollbar Styling */
@@ -74,9 +83,7 @@ body {
   background: rgba(255, 255, 255, 0.3);
 }
 
-/* Selection */
 ::selection {
   background: var(--primary);
   color: white;
 }
-
