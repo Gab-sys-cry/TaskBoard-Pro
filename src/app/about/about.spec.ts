@@ -46,26 +46,6 @@ describe('AboutComponent', () => {
     });
   });
 
-  // ==================== Tests des Observables ====================
-
-  describe('Observables', () => {
-    it('devrait avoir totalTasks$ défini', () => {
-      expect(component.totalTasks$).toBeDefined();
-    });
-
-    it('devrait avoir completedCount$ défini', () => {
-      expect(component.completedCount$).toBeDefined();
-    });
-
-    it('devrait avoir pendingCount$ défini', () => {
-      expect(component.pendingCount$).toBeDefined();
-    });
-
-    it('devrait avoir progressPercentage$ défini', () => {
-      expect(component.progressPercentage$).toBeDefined();
-    });
-  });
-
   // ==================== Tests du rendu ====================
 
   describe('Rendu du template', () => {

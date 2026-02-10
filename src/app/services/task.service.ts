@@ -1,18 +1,45 @@
-import { Injectable, inject } from '@angular/core';
+import {inject, Injectable} from '@angular/core';
 import {BehaviorSubject, map, Observable, skip, tap} from 'rxjs';
-import { Task } from '../models/task.model';
-import { NotificationService } from '../core/services/notification.service';
-import { SecurityService } from '../core/services/security.service';
+import {Task} from '../models/task.model';
+import {NotificationService} from '../core/services/notification.service';
+import {SecurityService} from '../core/services/security.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TaskService {
+  // Observable dérivé : nombre total de tâches
+  totalTasks$: Observable<number> = this.tasks$.pipe(
+    map(tasks => tasks.length)
+  );
+  // Observable dérivé : taches complétées
+  completedTasks$: Observable<Task[]> = this.tasks$.pipe(
+    map(tasks => tasks.filter(task => task.completed))
+  );
+  // Observable dérivé : tâches en cours
+  pendingTasks$: Observable<Task[]> = this.tasks$.pipe(
+    map(tasks => tasks.filter(task => !task.completed))
+  );
+  // Données initiales par défaut
+  // Observable dérivé : nombre de tâches complétées
+  completedCount$: Observable<number> = this.completedTasks$.pipe(
+    map(tasks => tasks.length)
+  );
+  // Observable dérivé : nombre de tâches en cours
+  pendingCount$: Observable<number> = this.pendingTasks$.pipe(
+    map(tasks => tasks.length)
+  );
+  // Observable dérivé : pourcentage de progression
+  progressPercentage$: Observable<number> = this.tasks$.pipe(
+    map(tasks => {
+      if (tasks.length === 0) return 0;
+      const completed = tasks.filter(t => t.completed).length;
+      return Math.round((completed / tasks.length) * 100);
+    })
+  );
   private notificationService = inject(NotificationService);
   private securityService = inject(SecurityService);
-
   private readonly STORAGE_KEY = 'taskboard-pro-tasks';
-  // Données initiales par défaut
   // Création de quelques taches initiales pour la démo
   private readonly defaultTasks: Task[] = [
     {
@@ -56,73 +83,15 @@ export class TaskService {
       createdAt: new Date()
     }
   ];
-
   // BehaviorSubject pour maintenir l'état des taches
   private tasksSubject = new BehaviorSubject<Task[]>(this.loadTasksFromStorage());
-
   // Observable
   tasks$: Observable<Task[]> = this.tasksSubject.asObservable();
-
-  // Observable dérivé : nombre total de tâches
-  totalTasks$: Observable<number> = this.tasks$.pipe(
-    map(tasks => tasks.length)
-  );
-  // Observable dérivé : taches complétées
-  completedTasks$: Observable<Task[]> = this.tasks$.pipe(
-    map(tasks => tasks.filter(task => task.completed))
-  );
-  // Observable dérivé : tâches en cours
-  pendingTasks$: Observable<Task[]> = this.tasks$.pipe(
-    map(tasks => tasks.filter(task => !task.completed))
-  );
-  // Observable dérivé : nombre de tâches complétées
-  completedCount$: Observable<number> = this.completedTasks$.pipe(
-    map(tasks => tasks.length)
-  );
-  // Observable dérivé : nombre de tâches en cours
-  pendingCount$: Observable<number> = this.pendingTasks$.pipe(
-    map(tasks => tasks.length)
-  );
-  // Observable dérivé : pourcentage de progression
-  progressPercentage$: Observable<number> = this.tasks$.pipe(
-    map(tasks => {
-      if (tasks.length === 0) return 0;
-      const completed = tasks.filter(t => t.completed).length;
-      return Math.round((completed / tasks.length) * 100);
-    })
-  );
 
   constructor() {
     // Sauvegarder automatiquement les tâches à chaque changement
     skip(1);
     this.tasks$.subscribe(tasks => this.saveTasksToStorage(tasks));
-  }
-
-  // Charger les taches depuis le localStorage
-  private loadTasksFromStorage(): Task[] {
-    try {
-      const storedData = localStorage.getItem(this.STORAGE_KEY);
-      if (storedData) {
-        const tasks: Task[] = JSON.parse(storedData);
-        return tasks.map(task => ({
-          ...task,
-          createdAt: new Date(task.createdAt)
-        }));
-      }
-    } catch (error) {
-      console.error('[TaskService] Erreur lors du chargement des tâches:', error);
-    }
-    // Retourner les taches par défaut si aucune donnée n'est trouvée
-    return this.defaultTasks;
-  }
-
-  // Sauvegarder les taches dans le localStorage
-  private saveTasksToStorage(tasks: Task[]): void {
-    try {
-      localStorage.setItem(this.STORAGE_KEY, JSON.stringify(tasks));
-    } catch (error) {
-      console.error('[TaskService] Erreur lors de la sauvegarde des tâches:', error);
-    }
   }
 
   // Réinitialiser les taches aux valeurs par défaut
@@ -230,7 +199,7 @@ export class TaskService {
   // Mettre à jour une tache
   updateTask(id: number, updates: Partial<Task>): void {
     // Validation de sécurité pour les mises à jour
-    const sanitizedUpdates: Partial<Task> = { ...updates };
+    const sanitizedUpdates: Partial<Task> = {...updates};
 
     if (updates.title !== undefined) {
       const sanitizedTitle = this.securityService.validateTaskTitle(updates.title);
@@ -271,6 +240,33 @@ export class TaskService {
     return this.tasks$.pipe(
       map(tasks => tasks.find(task => task.id === id))
     );
+  }
+
+  // Charger les taches depuis le localStorage
+  private loadTasksFromStorage(): Task[] {
+    try {
+      const storedData = localStorage.getItem(this.STORAGE_KEY);
+      if (storedData) {
+        const tasks: Task[] = JSON.parse(storedData);
+        return tasks.map(task => ({
+          ...task,
+          createdAt: new Date(task.createdAt)
+        }));
+      }
+    } catch (error) {
+      console.error('[TaskService] Erreur lors du chargement des tâches:', error);
+    }
+    // Retourner les taches par défaut si aucune donnée n'est trouvée
+    return this.defaultTasks;
+  }
+
+  // Sauvegarder les taches dans le localStorage
+  private saveTasksToStorage(tasks: Task[]): void {
+    try {
+      localStorage.setItem(this.STORAGE_KEY, JSON.stringify(tasks));
+    } catch (error) {
+      console.error('[TaskService] Erreur lors de la sauvegarde des tâches:', error);
+    }
   }
 
   // Générer un ID unique

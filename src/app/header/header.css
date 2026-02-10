@@ -74,7 +74,6 @@
   box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
 }
 
-/* Mobile */
 @media (max-width: 600px) {
   .header {
     padding: 0.75rem 1rem;

