@@ -4,8 +4,7 @@ import {
   withPreloading,
   PreloadAllModules,
   withInMemoryScrolling,
-  withViewTransitions,
-  withHashLocation
+  withViewTransitions
 } from '@angular/router';
 
 import {routes} from './app.routes';
@@ -17,7 +16,6 @@ export const appConfig: ApplicationConfig = {
     provideRouter(
       routes,
       withPreloading(PreloadAllModules),
-      withHashLocation(),
       withInMemoryScrolling({
         scrollPositionRestoration: 'enabled',
         anchorScrolling: 'enabled'

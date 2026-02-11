@@ -1,4 +1,5 @@
-import {inject, Injectable} from '@angular/core';
+import {inject, Injectable, PLATFORM_ID} from '@angular/core';
+import {isPlatformBrowser} from '@angular/common';
 import {BehaviorSubject, map, Observable, skip, tap} from 'rxjs';
 import {Task} from '../models/task.model';
 import {NotificationService} from '../core/services/notification.service';
@@ -10,8 +11,12 @@ import {SecurityService} from '../core/services/security.service';
 export class TaskService {
   private notificationService = inject(NotificationService);
   private securityService = inject(SecurityService);
+  private platformId = inject(PLATFORM_ID);
   private readonly STORAGE_KEY = 'taskboard-pro-tasks';
 
+  private get canAccessStorage(): boolean {
+    return isPlatformBrowser(this.platformId);
+  }
   // Données initiales par défaut
   // Création de quelques taches initiales pour la démo
   private readonly defaultTasks: Task[] = [
@@ -98,7 +103,9 @@ export class TaskService {
 
   // Réinitialiser les taches aux valeurs par défaut
   resetToDefaultTasks(): void {
-    localStorage.removeItem(this.STORAGE_KEY);
+    if (this.canAccessStorage) {
+      localStorage.removeItem(this.STORAGE_KEY);
+    }
     this.tasksSubject.next(this.defaultTasks);
     this.notificationService.info('Tâches réinitialisées aux valeurs par défaut');
   }
@@ -246,6 +253,9 @@ export class TaskService {
 
   // Charger les taches depuis le localStorage
   private loadTasksFromStorage(): Task[] {
+    if (!this.canAccessStorage) {
+      return this.defaultTasks;
+    }
     try {
       const storedData = localStorage.getItem(this.STORAGE_KEY);
       if (storedData) {
@@ -264,6 +274,9 @@ export class TaskService {
 
   // Sauvegarder les taches dans le localStorage
   private saveTasksToStorage(tasks: Task[]): void {
+    if (!this.canAccessStorage) {
+      return;
+    }
     try {
       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(tasks));
     } catch (error) {
