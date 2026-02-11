@@ -47,14 +47,11 @@ Toutes les boucles `@for` utilisent `track` pour optimiser le rendu :
 
 ### 📊 Métriques Lighthouse (avant/après)
 
-| Métrique               | Avant | Après   | Amélioration |
-|------------------------|-------|---------|--------------|
-| Performance            | ~85   | ~95     | +10 points   |
-| First Contentful Paint | -     | < 1.5s  | ✅            |
-| Time to Interactive    | -     | < 2.5s  | ✅            |
-| Total Blocking Time    | -     | < 200ms | ✅            |
+#### Avant
+![Lighthouse Avant](avant-opti.png)
 
----
+### Après
+![Lighthouse Après](apres-opti.png)
 
 ## Partie 2 : Audit de Sécurité
 
@@ -153,12 +150,4 @@ service.addTask({
 4. **Async Pipe** - Gestion automatique des subscriptions
 5. **Standalone Components** - Tree-shaking optimisé
 
-## Conclusion
-
-L'application TaskBoard Pro respecte les bonnes pratiques de sécurité Angular :
-
-- ✅ Aucune vulnérabilité XSS détectée
-- ✅ Protection active contre les injections HTML
-- ✅ Performance optimisée avec OnPush et trackBy
-- ✅ Lazy loading des routes implémenté
 

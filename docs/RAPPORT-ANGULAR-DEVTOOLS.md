@@ -1,15 +1,5 @@
 # Rapport d'Analyse Angular DevTools - TaskBoard Pro
 
-## 📊 Vue d'ensemble
-
-Ce rapport présente une analyse détaillée des performances de l'application **TaskBoard Pro** basée sur les données collectées par Angular DevTools. L'analyse porte sur la détection des changements, les cycles de vie des composants et les performances globales de rendu.
-
-**Date de l'analyse** : Février 2026  
-**Version Angular** : 21.0.0  
-**Nombre d'échantillons collectés** : 26
-
----
-
 ## 🎯 Métriques Clés
 
 ### Durée de Détection des Changements
@@ -174,8 +164,4 @@ onClick() {
   // this.taskService.processAsync().subscribe();
 }
 ```
-
-**Rapport généré le** : 10 février 2026  
-**Application** : TaskBoard Pro  
-**Framework** : Angular 21.0.0
 
