@@ -116,4 +116,14 @@ void {
 }
 ```
 
-D'autres markdown sont disponibles en parcourant l'arborescence du projet ! 
+D'autres markdown sont disponibles en parcourant l'arborescence du projet !
+ 
+## README
+- [README.md](README.md) – Présentation du projet, lazy loading et composants dynamiques.
+- [DEPLOYMENT.md](DEPLOYMENT.md) – Guide des différentes options de déploiement (gh-pages, GitHub Actions, etc.).
+- [LANCEMENT.md](LANCEMENT.md) – Commandes PowerShell/Bat/Sh pour démarrer l’application localement.
+- [src/app/tests/README-TESTS.md](src/app/tests/README-TESTS.md) – Documentation des tests unitaires avec Vitest et commandes associées.
+- [src/app/services/README-SERVICE.md](src/app/services/README-SERVICE.md) – Détail du TaskService, des Observables exposés et du lazy loading des routes.
+- [src/app/services/README-PERSISTENCE.md](src/app/services/README-PERSISTENCE.md) – Modalité de persistance des tâches via le localStorage et ses méthodes.
+- [docs/AUDIT-SECURITY-PERFORMANCE.md](docs/AUDIT-SECURITY-PERFORMANCE.md) – Résultats de l’audit sécurité/performance avec métriques OnPush, XSS et Lighthouse.
+- [docs/RAPPORT-ANGULAR-DEVTOOLS.md](docs/RAPPORT-ANGULAR-DEVTOOLS.md) – Analyses Angular DevTools, événements longs et recommandations de performance.
