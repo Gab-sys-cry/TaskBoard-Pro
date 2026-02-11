@@ -1,5 +1,12 @@
 import {ApplicationConfig, provideBrowserGlobalErrorListeners} from '@angular/core';
-import {provideRouter, withPreloading, PreloadAllModules, withInMemoryScrolling, withViewTransitions} from '@angular/router';
+import {
+  provideRouter,
+  withPreloading,
+  PreloadAllModules,
+  withInMemoryScrolling,
+  withViewTransitions,
+  withHashLocation
+} from '@angular/router';
 
 import {routes} from './app.routes';
 
@@ -9,6 +16,7 @@ export const appConfig: ApplicationConfig = {
     provideRouter(
       routes,
       withPreloading(PreloadAllModules),
+      withHashLocation(),
       withInMemoryScrolling({
         scrollPositionRestoration: 'enabled',
         anchorScrolling: 'enabled'
